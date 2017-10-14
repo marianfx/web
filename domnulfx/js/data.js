@@ -511,7 +511,7 @@ function attachEduExperience(){
     var edus = [
         {
             dataposition: "Left",
-            institution: "👨‍🎓 Faculty of Computer Science, „Alexandru Ioan Cuza” University, Iași",
+            institution: "🎓 Faculty of Computer Science, „Alexandru Ioan Cuza” University, Iași",
             title: "Bachelor's Degree, Computer Science",
             period: "2014 - 2017 (3 years)",
             description: `Status: finished, no license yet.<br/> Three years of learning more or less useful knowledge (presented in a
