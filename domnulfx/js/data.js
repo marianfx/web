@@ -7,6 +7,7 @@ function loadData(){
     attachSkills();
     attachSideData();
     attachWorkExperience();
+    attachEduExperience();
 }
 
 function attachLoves(){
@@ -502,5 +503,104 @@ function attachWorkExperience(){
                         </div>
                     </li>`;
         $('#work-timeline').append(jobBody);
+    });
+}
+
+function attachEduExperience(){
+    var edus = [
+        {
+            dataposition: "Left",
+            institution: "👨‍🎓 Faculty of Computer Science, „Alexandru Ioan Cuza” University, Iași",
+            title: "Bachelor's Degree, Computer Science",
+            period: "2014 - 2017 (3 years)",
+            description: `Status: finished, no license yet.<br/> Three years of learning more or less useful knowledge (presented in a
+                more or less optimized fashion), meeting new people and discovering new ideas about my future self.`,
+            tags: ["Web Technologies", "Cloud Computing", ".NET", ".NET Advanced", "OOP", "Programming Engineering", "Computer Networks", "Databases &amp; DBMS Practice", "Operating Systems - Linux", "Python", "Game design &amp; Development", "Computer Graphics", "Regular Expressions / Formal Languages", "Mathematics", "Logics for Computer Science", "Machine Learning", "Artificial Intelligence", "Data Structures", "Algorithms Design", "Java"]
+        },
+        {
+            dataposition: "Right",
+            institution: "🌞 SoloLearn - JavaScript Course",
+            title: '<a href="https://www.sololearn.com/Profile/1229632/" target="_blank">Certificate of Completion</a>',
+            period: "Jun. 2017 (1 month)",
+            description: ``,
+            tags: ["JavaScript"]
+        },
+        {
+            dataposition: "Left",
+            institution: "🌞 SoloLearn - HTML Fundamentals",
+            title: '<a href="https://www.sololearn.com/Profile/1229632/" target="_blank">Certificate of Completion</a>',
+            period: "Feb. 2017 (1 month)",
+            description: ``,
+            tags: ["HTML", "HTML5"]
+        },
+        {
+            dataposition: "Right",
+            institution: "🌞 SoloLearn - Python 3 Course",
+            title: '<a href="https://www.sololearn.com/Profile/1229632/" target="_blank">Certificate of Completion</a>',
+            period: "Jan. 2017 (1 month)",
+            description: ``,
+            tags: ["Python", "Python 3"]
+        },
+        {
+            dataposition: "Left",
+            institution: "🌞 SoloLearn - C# Course",
+            title: '<a href="https://www.sololearn.com/Profile/1229632/" target="_blank">Certificate of Completion</a>',
+            period: "Jul. 2017 (1 month)",
+            description: ``,
+            tags: ["C#"]
+        },
+        {
+            dataposition: "Right",
+            institution: "🎒 „Ștefan Procopiu” High-School, Vaslui",
+            title: "High School Diploma in Mathematics and Computer Science",
+            period: "2010 - 2015 (4 years)",
+            description: `Also obtained <b>Professional Certificate</b>, <b>Baccalaureate Diploma</b> and <b>English Certificate</b>. 
+            <hr>
+            Baccalaureate - Jun 2014. Avg: <b>9.86</b> <br/> 
+            ⭐ Mathematics: <b>10</b> <br/>
+            ⭐ Computer Science (C/C++) : <b>10</b> <br/>
+            ⭐ Romanian Language &amp; Literature: <b>9.6</b>.`,
+            tags: ["Mathematics", "Computer Science", "Romanian Language &amp; Literature", "English Language"]
+        },
+        {
+            dataposition: "Left",
+            institution: "👶 Elementary School &amp; Secondary Education",
+            title: "Life++",
+            period: "2002 - 2010 (8 years)",
+            description: `Does anybody remember something from this forgotten times?`,
+            tags: ["Life Experience"]
+        }
+    ];
+
+
+    _.forEach(edus, function(edu){
+        var tags = "";
+        _.forEach(edu.tags, function(tag){
+            var element = "<li><a href='#'><span>" + tag + "</span></a></li>";
+            tags += element;
+        });
+        
+        var inverted = (edu.dataposition === "Right" ? "timeline-inverted " : " ");
+        var eduBody = `<li class="` + inverted + `wow fadeIn` + edu.dataposition + `">
+                        <div class="timeline-badge">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h2>` + edu.institution + `</h2>
+                                <h3>` + edu.title + `</h3>
+                                <span class="date"><i>` + edu.period + `</i></span>
+                            </div>
+                            <div class="timeline-body">
+                                ` + edu.description + `
+                            </div>
+                            <div class="tagcloud">
+                                <ul>
+                                ` + tags + `
+                                </ul>
+                            </div>
+                        </div>
+                    </li>`;
+        $('#edu-timeline').append(eduBody);
     });
 }
