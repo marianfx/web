@@ -75,7 +75,7 @@ function attachSocialLinks(){
             title: "Facebook"
         },
         {
-            url: "https://www.instagram.com/marianfx/",
+            url: "https://www.instagram.com/domnulfx/",
             icon: "fa-instagram",
             title: "Instagram"
         },
