@@ -8,6 +8,7 @@ function loadData(){
     attachSideData();
     attachWorkExperience();
     attachEduExperience();
+    attachContact();
 }
 
 function attachLoves(){
@@ -602,5 +603,110 @@ function attachEduExperience(){
                         </div>
                     </li>`;
         $('#edu-timeline').append(eduBody);
+    });
+}
+
+function attachContact(){
+    var data = {
+        address: `Bld. Nicolae Iorga, No. 26 <br/>
+                Iași, România, 700259`,
+        phone: "+40 749-936-026",
+        mails: ["marian.focsa@outlook.com", "m.focsa@kireyest.com", "domnulfx@gmail.com"],
+        whentocontact: ["Week: 09:00 AM - 19:00 PM", "Weekend: 11 AM - 2 PM"],
+        messengerLink: "https://m.me/marian.fx",
+        mapsLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6091.2352056701!2d27.58541845006448!3d47.151257028542936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cafbbb580ba0a9%3A0x2021d6f47ce6da2!2sBulevardul+Nicolae+Iorga+26%2C+Ia%C8%99i+700259!5e0!3m2!1sro!2sro!4v1498219840426"
+    };
+
+    var mails = '';
+    _.forEach(data.mails, function(mail){
+        mails += `  <p>
+                        <a href="mailto:` + mail + `">` + mail + `</a> 
+                    </p>`;
+    });
+
+    var contactHours = '';
+    _.forEach(data.whentocontact, function(contactHour){
+        contactHours += "<p>" + contactHour + "</p>";
+    });
+
+    var basicContact = `<li>
+                            <div class="contact-list">
+                                <i class="fa fa-map-marker"></i>
+                                <div class="contact-info">
+                                    <p>` + data.address + `</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-list">
+                                <i class="fa fa-envelope"></i>
+                                <div id="contact-mails" class="contact-info">
+                                    ` + mails + `
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-list">
+                                <i class="fa fa-phone"></i>
+                                <div class="contact-info">
+                                    <p>` + data.phone + `</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-list">
+                                <i class="fa fa-clock-o"></i>
+                                <div class="contact-info">
+                                    ` + contactHours + `
+                                </div>
+                            </div>
+                        </li>`;
+    
+    var actionButtons = `<a id="send-mail" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Your (must-have) e-mail client will pop-up.">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            Send mail
+                        </a>
+                        <a id="open-messenger" href="` + data.messengerLink + `" target="_blank" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Or chat with me on Facebook's Messenger.">
+                            <i class="fa fa-commenting" aria-hidden="true"></i>
+                            Messenger
+                        </a>`;
+
+    var map = `<iframe src="` + data.mapsLink + `"
+    height="450" frameborder="0" style="border:0; width: 100%;" allowfullscreen></iframe>`;
+
+    $('#contact-data ul').html(basicContact);
+    $('#contact-form').append(actionButtons);
+    $('#map-container').html(map);
+
+    // init actions
+    $('[data-toggle="tooltip"]').tooltip();
+    $('#send-mail').click(function(){
+        var subject = $('#form-subject').val();
+        var message = $('#form-message').val();
+        var error = '';
+        if(subject == null || subject == '')
+            error = "So you have nothing to talk with me about? 😞Insert a subject for this message to work, please!";
+        if(error == '' && (message == null || message == ''))
+            error = "If you have no idea, then it means we have a problem - we can't communicate! 😭 (you must insert a message)";
+        
+        if(error != '')
+            return swal({
+                title: "Oh, snap!",
+                text: error,
+                icon: "warning",
+                button: "I Understand and Accept."
+            });
+        
+        var mailto = $('#contact-mails p:first-child a:first-child');
+        if(mailto == null || mailto == 'undefined')
+            return swal({
+                title: "Oh, snap!",
+                text: "It seams that there is no contact email address. You cannot send your precious message. 😞",
+                icon: "warning",
+                button: "I Understand and Accept."
+            });
+        
+        var mailstr = "mailto:" + mailto.text() + "?subject=" + subject + "&body=" + message;
+        window.open(mailstr, '_self');
     });
 }

@@ -23,7 +23,6 @@ var pluginspreparer = function () {
     // var logosAvailable = 2;
     // var randomLogoId = Math.floor(Math.random() * logosAvailable + 1);
     // $('.navbar-brand img').attr("src", "img/logos/logo" + randomLogoId + ".png");
-
 };
 
 function afterLoadedDissapears(){
