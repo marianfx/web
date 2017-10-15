@@ -41,9 +41,6 @@ Version      	: 1.0
 		// Projects Filter
 		$('.portfolio_items').mixItUp();
 		
-		// Fancybox
-		$('a.fancybox').fancybox();
-		
 		$('#navbar').each(function(){
 			$(this).jScrollPane({
 				showArrows: $(this).is('.arrow')
