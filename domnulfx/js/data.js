@@ -10,6 +10,7 @@ function loadData(){
     attachEduExperience();
     attachContact();
 }
+loadData();
 
 function attachLoves(){
     var loves = [

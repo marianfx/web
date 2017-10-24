@@ -1,6 +1,3 @@
-
-loadData();
-
 var pluginspreparer = function () {
     "use strict";
 

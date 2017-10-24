@@ -1,14 +1,6 @@
 /* Taken and improved from https://codepen.io/choogoor/pen/YWBxAg @example-2 */
 #wrapper-1{
-    background: url(https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fnewsignature.com%2Fwp-content%2Fuploads%2F2016%2F09%2Fproject-management-manager-980x505.jpg&f=1) center/cover no-repeat;
-}
-
-#wrapper-2{
-    background: url(https://images.duckduckgo.com/iu/?u=http%3A%2F%2F0.s3.envato.com%2Ffiles%2F6540074%2FPROJECT.jpg&f=1) center/cover no-repeat;
-}
-
-#wrapper-3{
-    background: url(https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.petri.com%2Fwp-content%2Fuploads%2F2016%2F04%2Fproject-madeira-hero.jpg&f=1) center/cover no-repeat;
+    background: url(../img/portfolio/change-notifier.jpg) center/cover no-repeat;
 }
 
 .wrapper::after, .wrapper .header::after, .wrapper .data::after{
@@ -127,7 +119,7 @@
   }
   .full-card .header {
     z-index: 2;/* put it in front of background */
-    color: #fff;
+    color: #000;
     padding: 1em;
   }
   .full-card .data{
