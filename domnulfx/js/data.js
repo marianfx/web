@@ -41,7 +41,7 @@ var socialLinks = [{
         title: "Linkedin"
     },
     {
-        url: "https://medium.com/@marianfx69",
+        url: "http://lechaton.pro",
         icon: "fa-pencil-square",
         title: "Blog"
     },
@@ -51,20 +51,15 @@ var socialLinks = [{
         title: "Github"
     },
     {
-        url: "https://www.facebook.com/marian.fx",
-        icon: "fa-facebook",
+        url: "https://twitter.com/fxsays",
+        icon: "fa-twitter",
         title: "Facebook"
     },
     {
         url: "https://www.instagram.com/monsieurfx/",
         icon: "fa-instagram",
         title: "Instagram"
-    },
-    {
-        url: "https://ro.pinterest.com/fxmarian/",
-        icon: "fa-pinterest-p",
-        title: "Pinterest"
-    },
+    }
 ];
 
 var age = getAge(1996, 8, 4);
@@ -100,7 +95,7 @@ var infos = [{
 var contactData = {
     address: `Iași, România`,
     phone: "+40 749-936-026",
-    mails: ["marian.focsa@outlook.com", "m.focsa@kireyest.com", "domnulfx@gmail.com"],
+    mails: ["marian.focsa@outlook.com", "fx@lechaton.pro", "marian.focsa@kireygroup.com"],
     whentocontact: ["Week: 09:00 AM - 19:00 PM", "Weekend: 11 AM - 2 PM"],
     messengerLink: "https://m.me/marian.fx"
 };
@@ -108,30 +103,22 @@ var profiFile = {
     description: "Sassy software enthusiast with great skills of communication, attention to details & architectural thinking. Based on my fast learning algorithm and team choreography understanding, I'm looking forward to increasing my software engineering skills and growing myself into the better developer. Open minded, I'll be always looking for a new challenge to take on.",
     link1: {
         title: "Download Resume",
-        link: "#"
+        link: "/files/cv_pro.pdf"
     },
     link2: {
         title: "Linkedin",
         link: "https://www.linkedin.com/in/marianfx/"
     }
 };
-var numbersData = [{
-        title: "Projects",
-        count: 10
-    },
-    {
-        title: "Cups of coffee",
-        count: 6969
-    },
-];
 
 var interestsIntro = {
     description: '"We don\'t read and write poetry because it\'s cute. We read and write poetry because we are members of the human race. And the human race is filled with passion. And medicine, law, business, engineering, these are noble pursuits and necessary to sustain life. But poetry, beauty, romance, love, these are what we stay alive for."',
     caption: "- Robin Williams in ‘Dead Poets Society’"
 };
+
 var interestsData = [{
         title: "Movies",
-        link: "https://www.taste.io/users/domnulfx",
+        link: "https://www.taste.io/users/monsieurfx",
         icon: "fa-film"
     },
     {
@@ -156,7 +143,7 @@ var interestsData = [{
     },
     {
         title: "Photography",
-        link: "https://500px.com/marianfx/galleries",
+        link: "https://gurushots.com/monsieurfx",
         icon: "fa-photo"
     },
     {
@@ -256,10 +243,6 @@ var cards = [{
                 value: 90
             },
             {
-                title: "Node.js & Frameworks (Express, Sails, Socket.io, Electron,  ...)",
-                value: 85
-            },
-            {
                 title: "ORMs (Entity Framework, Sequelize, ...)",
                 value: 79
             },
@@ -268,12 +251,16 @@ var cards = [{
                 value: 77
             },
             {
+                title: "Node.js & Frameworks (Express, Sails, Socket.io, Electron,  ...)",
+                value: 72
+            },
+            {
                 title: "JS & Frameworks (jQuery, Angular, Webtorrent, ...)",
-                value: 76
+                value: 72
             },
             {
                 title: "CSS & Frameworks (Bootstrap, Materialize, Angular Material ...)",
-                value: 74
+                value: 72
             },
             {
                 title: "Agile (Scrum with Jira / Trello)",
@@ -293,7 +280,7 @@ var cards = [{
         title: "Languages (Programming)",
         data: [{
                 title: "C#",
-                value: 91
+                value: 95
             },
             {
                 title: "JavaScript (ES6+ +/- TypeScript)",
@@ -323,33 +310,23 @@ var cards = [{
     },
 ];
 
+var firstJobYear = 2015;
 var jobs = [{
-        title: "🍹 ASP.NET Developer",
+        title: "🍹 Full-stack Developer",
         employer: "KireyEst",
-        period: "Aug. 2016 - Future (?)",
-        description: `The current big thing is the development cycle of a Project Management / Admin Dashsboard Style Application, with <b>ASP.NET MVC</b> Framework at its core, Onion-style architectured, combined with <i>IoC Mechanisms</i>, REST Web APIs and Unit Testing on the back-end, and a beautiful <b>Bootstrap 4</b>, Async-styled interface (using multiple client-side libraries). One does <i>development, coordination and performance improvements</i> on the project and manipulates the time with a customized version of Scrum (big thanks to <b>Trello</b>).`,
-        tags: ["C#", "ASP.NET MVC", "Entity Framework 6", "Onion", "Autofac", "DI", "IoC", "Unit Tests", "HTML5", "CSS3", "JS(ES6)", "Bootstrap 4", "AJAX", "jQuery", "Chart.js", "MySql", "Scrum", "Visual Studio 2017", "Trello", "DBeaver", "Coordination", "Architecture"]
+        period: "Aug. 2017 - Future (?)",
+        description: `In the process of testing social skills and unveiling new full stack developer techniques. <br/>  
+        🎉 Currently working on a new full-stack project, coordinating a team in re-engineering an old application with Angular 5, .NET Core, following the Scrum methodology.  <br/> 
+        Previously:  <br/> 
+        🎉 Engineered with the help of other experienced people a targeted project management application and coordinated, in an Agile manner, a small team to full-stack develop the ASP.NET MVC architecture, following standard patterns, integrating IoT Mechanisms, REST Web APIs, Unit Testing and many more.`,
+        tags: ["C#", "ASP.NET Core", "EF Core", "ASP.NET MVC", "Entity Framework 6", "DI", "Autofac", "IoC", "Unit Tests", "Angular 5", "HTML5", "CSS3", "JS(ES6)", "Bootstrap", "AJAX", "jQuery", "Chart.js", "MySql", "Scrum", "Visual Studio 2017", "Trello", "DBeaver", "Coordination", "Architecture"]
     },
     {
-        title: "🍷 WPF.NET Developer",
+        title: "🍷 .NET Developer",
         employer: "KireyEst",
-        period: "Oct. 2016 - Jul. 2016 (10 months)",
-        description: `A WPF desktop project appeared on the Horizon. Learned a good amount of practical skills getting the project from start to the (almost) finish alongside my team, updated my social understanding and team work techniques, discovered a lot of tricks and, maybe the best of it all, became the better me (as a developer).`,
-        tags: ["VB.NET", "WPF - MVVM", "Entity Framework 6", "LINQ", "T-SQL", "Visual Studio 2015", "SQL Server 2012", "TFS", "Tricks", "Understanding of Teams"]
-    },
-    {
-        title: "🍵 Tester &amp; Tools Supervisor.",
-        employer: "KireyEst",
-        period: "Jul. 2016 - Sep. 2016 (3 months)",
-        description: `During the story, one's activities consisted, for a short period of time, of developing and maintaining an interesting set of testing tools (Telerik-based for a while, then HP-based) and running automated tests on a banking web site.`,
-        tags: ["C#", "VBScript", ".NET Framework", "Telerik", "T-SQL", "Visual Studio 2015", "SQL Server 2008", "TFS", "Automation Tester"]
-    },
-    {
-        title: "🍻 ASP.NET Developer",
-        employer: "KireyEst",
-        period: "Oct. 2015 - Jun. 2016 (9 months)",
-        description: `The real deal started with the first internal project, an anti-fraud system to facilitate the insurance companies in identifying potential frauds, consisting of an ecosystem of database choreographies, having on top an ASP.NET Web Forms application (meh, but good for starters). Helped a lot in identifying social skills and unveiling new full stack developer techniques.`,
-        tags: ["C#", "ASP.NET Web Forms", "Entity Framework 5", "T-SQL", "HTML", "CSS", "JS", "Visual Studio 2015", "SQL Server 2012", "CVS", "Full Stack"]
+        period: "Oct. 2015 - Jul. 2017 (<2 years)",
+        description: `Involved in a wide range of activities, from Desktop applications to automated testing and web developing, working part-time while also studying. ☕.`,
+        tags: ["C#", "VB.NET", ".NET Framework", "WPF - MVVM", "ASP.NET MVC", "ASP.NET Web Forms", "Entity Framework 6", "LINQ", "T-SQL", "Visual Studio 2015", "SQL Server 2012", "TFS", "Telerik", "Tricks", "Understanding of Teams"]
     },
     {
         title: "🍼 .NET Intern",
@@ -418,20 +395,248 @@ var edus = [{
     }
 ];
 
+var contributors = [{
+    nick: "groza",
+    name: "Vasile",
+    url: "https://www.linkedin.com/in/vasile-groza-553a5911b/"
+}, {
+    nick: "dorin",
+    name: "Dorin",
+    url: "https://www.linkedin.com/in/dorin-miron/",
+}, {
+    nick: "cezy",
+    name: "Cezara",
+    url: "https://github.com/Chinmaiy"
+}, {
+    nick: "ioana",
+    name: "Ioana",
+    url: "https://www.linkedin.com/in/ioana-bogdan-a149a7107/"
+}, {
+    nick: "marta",
+    name: "Marta",
+    url: "https://github.com/martafil"
+}, {
+    nick: "alberto",
+    name: "Alberto",
+    url: "https://www.linkedin.com/in/alberto-cieri-a152b0121/"
+}, {
+    nick: "bianca",
+    name: "Bianca",
+    url: "https://www.linkedin.com/in/bianca-roxana-coman-009ab1121/"
+}, {
+    nick: "tifui",
+    name: "Vali T.",
+    url: "https://www.linkedin.com/in/tifuivali/"
+}, {
+    nick: "vali",
+    name: "Vali",
+    url: "https://github.com/valicolibaba"
+}];
+
+var cLinks = {};
+contributors.forEach(element => {
+    cLinks[element.nick] = "<a href='" + element.url + "'>" + element.name + "</a>"
+});
 
 /* All projects AREA */
 var allProjects = [{
-    category: "side-projects",
-    time: "Jan, 2016",
-    type: "Side Project / Solo",
-    title: "Change Notifier - Desktop Node.JS &amp; Electron Application",
-    description: "Built with Electron, capable of running diffs on a webpage and show you only what's changed, using native notifications. Check Github for full details.",
-    url: {
-        link: "https://github.com/marianfx/change-notifier",
-        title: "Check Github"
+        category: "side-projects",
+        time: "May 2018",
+        type: "Side Project / Solo / In Progress",
+        title: "REPLAY - Private Tracker Streaming App",
+        description: "Web application which integrates many existing web engines for creating awesome streaming experience from private trackers.",
+        url: {
+            link: "javascript:void()",
+            title: "Private work"
+        },
+        image: "./img/portfolio/replay.jpg"
+    },{
+        category: "work-projects",
+        time: "May. 2018",
+        type: "Work / In progress",
+        title: "RAM.NET - Risk Asset Management",
+        description: "Web application, reengineered after an old Desktop app with ASP.NET Core &amp; Angular, which does lots of banking stuff (really complicated).",
+        url: {
+            link: "javascript:void()",
+            title: "Private work"
+        },
+        image: "./img/portfolio/ramnet.png"
+    }, {
+        category: "work-projects",
+        time: "Jan. 2018",
+        type: "Work Project / Continuous",
+        title: "Problem killing and training samples",
+        description: "Consists mostly of solving, in different ways, problems from LeetCode (a website that approaches different software engineering problems) and training materials.",
+        url: {
+            link: "https://bitbucket.org/marianfx/kirey-tuts/src/dev-fx/",
+            title: "Check repo"
+        },
+        image: "./img/portfolio/leetcode.png"
+    }, {
+        category: "side-projects",
+        time: "Nov. 2017",
+        type: "Side Project / Solo / In Progress",
+        title: "LIFR - Instagram Bot &amp; Manager",
+        description: "Web, Node.JS based application for managing Instagram account - full access to followers, unfollowers, history, automated tasks.",
+        url: {
+            link: "javascript:void()",
+            title: "Private work"
+        },
+        image: "./img/portfolio/lifr.png"
+    },{
+        category: "work-projects",
+        time: "Aug. 2017",
+        type: "Work / Finished",
+        title: "Promis.NET - Oil & Gas Project Management",
+        description: "A smart web application, ASP.NET MVC &amp; (*insert many FE libs here) of which sole purpose is the management of huge oil & gas project's construction and resources.",
+        url: {
+            link: "javascript:void()",
+            title: "Private work"
+        },
+        image: "./img/portfolio/promisnet.jpg"
+    },{
+        category: "uni-projects",
+        time: "May 2017",
+        type: "Uni / " + cLinks.cezy,
+        title: "Numerical Calculus - Labs &amp; Assignments",
+        description: "Small projects (in Java & C#) that solve different complicated mathematical problems: matrices, aproximations, automated equation solving etc.",
+        url: {
+            link: "https://bitbucket.org/javafxteam/cn-labs",
+            title: "Check repo"
+        },
+        image: "./img/portfolio/labs-cn.jpg"
+    },{
+        category: "uni-projects",
+        time: "May 2017",
+        type: "Uni / " + cLinks.cezy,
+        title: "Computer Graphics - Labs &amp; Assignments",
+        description: "Small projects (in C++) that test the 'power' of raw computer graphic engines. Most of them contain lots of mathematics.",
+        url: {
+            link: "https://bitbucket.org/javafxteam/cg-labs",
+            title: "Check repo"
+        },
+        image: "./img/portfolio/labs-cf.jpg"
+    }, {
+        category: "uni-projects",
+        time: "Jan 2017",
+        type: "Uni / Solo",
+        title: "Cloud Computing - Labs &amp; Assignments",
+        description: "Small projects using different languages - a web youtube mp3 search & download tool, a REST API implemented without a framework, and a websockets collaborative markdown editor.",
+        url: {
+            link: "https://bitbucket.org/marianfx/cc-labs",
+            title: "Check repo"
+        },
+        image: "./img/portfolio/labs-cloud.jpg"
+    }, {
+        category: "uni-projects",
+        time: "Jan 2017",
+        type: "Uni / " + cLinks.ioana + ", " + cLinks.cezy + ", " + cLinks.marta + ", " + cLinks.alberto + ", " + cLinks.bianca + ", " + cLinks.tifui + ", " + cLinks.vali,
+        title: "Solution1 - Web App",
+        description: "Next gen/alternative of Fun Web. Replaces multiplayer concepts with a strong assignments uploads/copyrights check / grades management. Check Github for full details.",
+        url: {
+            link: "https://github.com/tabby336/Solution1",
+            title: "Check Github"
+        },
+        image: "./img/portfolio/solution1.png"
+    }, {
+        category: "uni-projects",
+        time: "Jan 2017",
+        type: "Uni / Solo / Labs",
+        title: "Python - Labs &amp; Assignments",
+        description: "Contains examples of doing many things basic things in Python, including more advanced ones like HTTP content server and Site Image Scraper",
+        url: {
+            link: "https://github.com/marianfx/python-labs",
+            title: "Check Github"
+        },
+        image: "./img/portfolio/labs-python.png"
+    }, {
+        category: "side-projects",
+        time: "Jan 2017",
+        type: "Side Project / Solo",
+        title: "ID3 Helper (Machine Learning) - Web / Android",
+        description: "Based on Cordova engine, this is a helper for the ID3 Machine Learning Algorithm, which can be used on web or compiled for Android. Check Github for full details.",
+        url: {
+            link: "https://github.com/marianfx/com.fx.Id3Helper",
+            title: "Check Github"
+        },
+        image: "./img/portfolio/id3-ml.png"
+    }, {
+        category: "uni-projects",
+        time: "Nov. 2016",
+        type: "Uni / Solo / Labs",
+        title: "Artificial Intelligence - Labs &amp; Assignments",
+        description: "Practical implementations of small AI Concents - a simple chatbot, a 4-ways Hanoi solver, A simple bot that plays chess on the Web, and some DBPedia samples.",
+        url: {
+            link: "https://github.com/marianfx/ai-labs",
+            title: "Check Github"
+        },
+        image: "./img/portfolio/labs-ai.jpg"
+    }, {
+        category: "uni-projects",
+        time: "Nov. 2016",
+        type: "Uni / Solo / Labs",
+        title: ".NET Core - Labs &amp; Assignments",
+        description: "Contains learning material about .NET Core 1.0 / 1.1 - concepts of OOP, LINQ, databases and repositories, and finally webforms (not .NET Core)",
+        url: {
+            link: "https://github.com/marianfx/dotnet-core-labs",
+            title: "Check Github"
+        },
+        image: "./img/portfolio/labs-netcore.png"
     },
-    image: "./img/portfolio/change-notifier.jpg"
-}];
+    {
+        category: "side-projects",
+        time: "Nov. 2016",
+        type: "Side Project / Solo / In Progress",
+        title: "Codingame - Solved problems",
+        description: "Codingame is a competitive website where people can solve different problems, which are presented in the form of games. This project involves solving certain games from the website.",
+        url: {
+            link: "https://bitbucket.org/fx69/codin-game-csharp",
+            title: "Check repo"
+        },
+        image: "./img/portfolio/codingame.jpg"
+    }, {
+        category: "uni-projects",
+        time: "June, 2016?",
+        type: "Uni / " + cLinks.groza + ", " + cLinks.cezy + ", " + cLinks.dorin,
+        title: "Fun Web - Node.JS based Learning &amp; Multiplayer WebApp",
+        description: "Fun educational app for learning courses, gaining XP and then competing in multiplayer Q&A competitions. Check Github for full details.",
+        url: {
+            link: "https://github.com/marianfx/team-7-fun-web",
+            title: "Check Github"
+        },
+        image: "./img/portfolio/fun-web.png"
+    },
+    {
+        category: "side-projects",
+        time: "Jan, 2016",
+        type: "Side Project / Solo",
+        title: "Change Notifier - Desktop Node.JS &amp; Electron Application",
+        description: "Built with Electron, capable of running diffs on a webpage and show you only what's changed, using native notifications. Check Github for full details.",
+        url: {
+            link: "https://github.com/marianfx/change-notifier",
+            title: "Check Github"
+        },
+        image: "./img/portfolio/change-notifier.jpg"
+    }
+];
+
+var numbersData = [{
+        title: "Projects",
+        count: allProjects.length
+    },
+    {
+        title: "Cups of coffee",
+        count: Infinity
+    },
+    {
+        title: "Years of experience",
+        count: (new Date().getFullYear() - firstJobYear)
+    },
+    {
+        title: "Glasses of wine",
+        count: "1996"
+    },
+];
 
 
 /* Helpful functions */

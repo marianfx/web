@@ -72,8 +72,8 @@ function attachBasicInfo() {
 
 function attachProfessionalProfile() {
     var element = $(`<p>` + profiFile.description + `</p>
-                    <a class="btn btn-primary" target="_blank" href="` + profiFile.link1.link + `">` + profiFile.link1.title + `</a>
-                    <a class="btn btn-default" target="_blank" href="` + profiFile.link2.link + `">` + profiFile.link2.title + `</a>
+                    <a class="btn btn-primary .profi-link1" target="_blank" href="` + profiFile.link1.link + `">` + profiFile.link1.title + `</a>
+                    <a class="btn btn-default .profi-link2" target="_blank" href="` + profiFile.link2.link + `">` + profiFile.link2.title + `</a>
                     `);
     $('.professional-profile').append(element);
 }
@@ -137,7 +137,7 @@ function attachWorkExperience() {
     _.forEach(jobs, function (job) {
         var tags = "";
         _.forEach(job.tags, function (tag) {
-            var element = "<li><a href='#'><span>" + tag + "</span></a></li>";
+            var element = "<li><a href='javascript:void()'><span>" + tag + "</span></a></li>";
             tags += element;
         });
 
@@ -171,7 +171,7 @@ function attachEduExperience() {
     _.forEach(edus, function (edu) {
         var tags = "";
         _.forEach(edu.tags, function (tag) {
-            var element = "<li><a href='#'><span>" + tag + "</span></a></li>";
+            var element = "<li><a href='javascript:void()'><span>" + tag + "</span></a></li>";
             tags += element;
         });
 
@@ -261,13 +261,16 @@ function attachContact() {
     // init actions
     $('[data-toggle="tooltip"]').tooltip();
     $('#send-mail').click(function () {
-        var subject = $('#form-subject').val();
+        var fromName = $('#form-name').val();
+        var from = $('#form-email').val();
         var message = $('#form-message').val();
         var error = '';
-        if (subject == null || subject == '')
-            error = "So you have nothing to talk with me about? 😞Insert a subject for this message to work, please!";
-        if (error == '' && (message == null || message == ''))
-            error = "If you have no idea, then it means we have a problem - we can't communicate! 😭 (you must insert a message)";
+        if (fromName == null || fromName == '')
+            error = "So you have no name? 😞";
+        if (error == '' && (from == null || from == ''))
+            error = "It seams that there is no contact email address. You cannot send your precious message. 😞";
+        if (error == '' && (message == null || message == '' || message.length < 50))
+            error = "If you have no idea, then it means we have a problem - we can't communicate! 😭 (you must insert a message at least 50 characters)";
 
         if (error != '')
             return swal({
@@ -277,17 +280,31 @@ function attachContact() {
                 button: "I Understand and Accept."
             });
 
-        var mailto = $('#contact-mails p:first-child a:first-child');
-        if (mailto == null || mailto == 'undefined')
-            return swal({
-                title: "Oh, snap!",
-                text: "It seams that there is no contact email address. You cannot send your precious message. 😞",
-                icon: "warning",
-                button: "I Understand and Accept."
-            });
+        $.ajax({
+            type: 'POST',
+            url: '/mail.php',
+            data: { 
+                'name': fromName, 
+                'from': from,
+                'message': message
+            },
+            success: function(response){
+                swal({ text: "Success!"});
+            },
+            failure: function(response) {
+                if (response && response.error){
+                    swal({ title: "Cannot send", icon: "warning", "text": response.error});
+                }
+                else {
+                    swal({ title: "Cannot send", icon: "warning", "text": "Some error happened."});
+                }
+            }
+        });
+        
 
-        var mailstr = "mailto:" + mailto.text() + "?subject=" + subject + "&body=" + message;
-        window.open(mailstr, '_self');
+        // var mailto = $('#contact-mails p:first-child a:first-child');
+        // var mailstr = "mailto:" + mailto.text() + "?subject=" + subject + "&body=" + message;
+        // window.open(mailstr, '_self');
     });
 }
 

@@ -94,6 +94,10 @@
     margin: 0;
     line-height: 15px;
   }
+  
+  .card .author a{
+    color: white;
+  }
 
   @media (min-width: 470px) and (max-width: 768px) {
       .card .text{
