@@ -1,4 +1,5 @@
 /* Initializers */
+var imagesAvailable = 6;
 var pluginspreparer = function () {
     "use strict";
 
@@ -7,18 +8,14 @@ var pluginspreparer = function () {
             $("body").addClass("loaded");
             setTimeout(function () {
                 afterLoadedDissapears();
-            }, 969);
+            }, 200);
         }, 200);
     });
 
     $("#cpyear").text(new Date().getFullYear());
     loadData();
 
-
-    var imagesAvailable = 4;
-    var randomImageId = Math.floor(Math.random() * imagesAvailable + 1);
-    $(".banner").css("background-image", "url(img/portraits/portrait" + randomImageId + ".jpeg)");
-
+    startChangingImages();
     // var logosAvailable = 2;
     // var randomLogoId = Math.floor(Math.random() * logosAvailable + 1);
     // $('.navbar-brand img').attr("src", "img/logos/logo" + randomLogoId + ".png");
@@ -31,6 +28,19 @@ function afterLoadedDissapears() {
 }
 $(pluginspreparer);
 
+function startChangingImages() {
+    changeImage(imagesAvailable);
+    let intrvl = setInterval(() => {
+        changeImage(imagesAvailable);
+    }, 15000);
+}
+
+function changeImage(imagesAvailable) {
+    var randomImageId = Math.floor(Math.random() * imagesAvailable + 1);
+    $(".banner").fadeOut(100, function() {
+        $(".banner").css("background-image", "url(img/portraits/portrait" + randomImageId + ".jpeg)");
+    }).fadeIn(100);
+}
 
 
 /* Classic attachment of data to placeholders (data is retrieved from data.js) using jQuery. */

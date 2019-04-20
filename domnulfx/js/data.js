@@ -17,6 +17,9 @@ var loves = [{
         name: "JavaScript"
     },
     {
+        name: "Photography"
+    },
+    {
         name: "Good Books"
     },
     {
