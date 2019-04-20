@@ -20,9 +20,6 @@ var loves = [{
         name: "Good Books"
     },
     {
-        name: "Node.Js"
-    },
-    {
         name: "Movies"
     },
     {
@@ -39,11 +36,6 @@ var socialLinks = [{
         url: "https://www.linkedin.com/in/marianfx/",
         icon: "fa-linkedin",
         title: "Linkedin"
-    },
-    {
-        url: "http://lechaton.pro",
-        icon: "fa-pencil-square",
-        title: "Blog"
     },
     {
         url: "https://github.com/marianfx",
@@ -73,7 +65,7 @@ var infos = [{
     },
     {
         title: "Phone",
-        value: "(+40) 749-936-026"
+        value: "(+40) 749-936-***"
     },
     {
         title: "Date of birth",
@@ -94,8 +86,8 @@ var infos = [{
 ];
 var contactData = {
     address: `Iași, România`,
-    phone: "+40 749-936-026",
-    mails: ["marian.focsa@outlook.com", "fx@lechaton.pro", "marian.focsa@kireygroup.com"],
+    phone: "+40 749-936-***",
+    mails: ["marian.focsa@outlook.com", "marian.focsa@kireygroup.com"],
     whentocontact: ["Week: 09:00 AM - 19:00 PM", "Weekend: 11 AM - 2 PM"],
     messengerLink: "https://m.me/marian.fx"
 };
@@ -168,7 +160,37 @@ var interestsData = [{
     },
 ];
 
-var cards = [{
+var cards = [
+    {
+        title: "Professional Skills",
+        data: [
+            {
+                title: "Web Development",
+                value: 95
+            },
+            {
+                title: ".NET Development",
+                value: 93
+            },
+            {
+                title: "OOP / <a target='_blank' href='https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)'>S.O.L.I.D.</a> Programming.",
+                value: 93
+            },
+            {
+                title: "Front-End Development",
+                value: 83
+            },
+            {
+                title: "Databases / SQL",
+                value: 75
+            },
+            {
+                title: "Data Structures &amp; Algorithms",
+                value: 70
+            }
+        ]
+    },
+    {
         title: "Personal Skills",
         data: [{
                 title: "Confidence",
@@ -176,27 +198,27 @@ var cards = [{
             },
             {
                 title: "Organizational Skills Suite",
+                value: 88
+            },
+            {
+                title: "Attention to Details",
                 value: 85
-            },
-            {
-                title: "Communication",
-                value: 80
-            },
-            {
-                title: "Leadership",
-                value: 75
             },
             {
                 title: "Architectural Thinking",
                 value: 75
             },
             {
-                title: "Attention to Details",
-                value: 70
+                title: "Fast Learning algorithm",
+                value: 75
             },
             {
-                title: "Fast Learning algorithm",
-                value: 70
+                title: "Leadership",
+                value: 75
+            },
+            {
+                title: "Communication",
+                value: 69
             },
             {
                 title: "Team Coreography",
@@ -205,70 +227,38 @@ var cards = [{
         ]
     },
     {
-        title: "Professional Skills",
+        title: "Technologies Mastered",
         data: [{
-                title: "OOP Programming & <a target='_blank' href='https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)'>S.O.L.I.D.</a>.",
-                value: 95
+                title: "ASP.NET (+Core) & Frameworks",
+                value: 92
             },
             {
-                title: ".NET Development",
-                value: 90
+                title: "JS / CSS & Frameworks",
+                value: 80
             },
             {
-                title: "Web Development",
-                value: 85
+                title: "Databases / ORMs / Any",
+                value: 82
             },
             {
-                title: "Databases / SQL",
-                value: 75
+                title: "Agile & Customs",
+                value: 70
             },
             {
-                title: "Front-End Development",
-                value: 75
+                title: "Async programming",
+                value: 70
+            },
+            {
+                title: ".NET Framework",
+                value: 69
+            },
+            {
+                title: "Node.js & Frameworks",
+                value: 60
             },
             {
                 title: "Functional Programming",
-                value: 70
-            },
-            {
-                title: "Data Structures &amp; Algorithms",
-                value: 55
-            }
-        ]
-    },
-    {
-        title: "Technologies Mastered",
-        data: [{
-                title: "ASP.NET & Frameworks",
-                value: 90
-            },
-            {
-                title: "ORMs (Entity Framework, Sequelize, ...)",
-                value: 79
-            },
-            {
-                title: ".NET Core",
-                value: 77
-            },
-            {
-                title: "Node.js & Frameworks (Express, Sails, Socket.io, Electron,  ...)",
-                value: 72
-            },
-            {
-                title: "JS & Frameworks (jQuery, Angular, Webtorrent, ...)",
-                value: 72
-            },
-            {
-                title: "CSS & Frameworks (Bootstrap, Materialize, Angular Material ...)",
-                value: 72
-            },
-            {
-                title: "Agile (Scrum with Jira / Trello)",
-                value: 70
-            },
-            {
-                title: ".NET Framework (Console, Library, WFA, WPF, WCF ...)",
-                value: 69
+                value: 60
             },
             {
                 title: "Regular Expressions",
@@ -291,19 +281,19 @@ var cards = [{
                 value: 80
             },
             {
-                title: "Python",
-                value: 60
-            },
-            {
-                title: "C/C++",
-                value: 60
-            },
-            {
-                title: "Java",
+                title: "VB.NET",
                 value: 50
             },
             {
-                title: "VB.NET",
+                title: "Python",
+                value: 50
+            },
+            {
+                title: "C/C++",
+                value: 50
+            },
+            {
+                title: "Java",
                 value: 50
             },
         ]
@@ -312,14 +302,14 @@ var cards = [{
 
 var firstJobYear = 2015;
 var jobs = [{
-        title: "🍹 Full-stack Developer",
-        employer: "KireyEst",
-        period: "Aug. 2017 - Future (?)",
-        description: `In the process of testing social skills and unveiling new full stack developer techniques. <br/>  
-        🎉 Currently working on a new full-stack project, coordinating a team in re-engineering an old application with Angular 5, .NET Core, following the Scrum methodology.  <br/> 
+        title: "🍹 Software Engineer",
+        employer: "Kirey Group",
+        period: "Aug. 2017 - Present (?)",
+        description: `In the process of testing social skills and unveiling new lead developer techniques. <br/>  
+        🎉 Currently working on a full-stack project, coordinating a team in re-engineering an old finance application with Angular, .NET Core, following the Scrum methodology.  <br/> 
         Previously:  <br/> 
-        🎉 Engineered with the help of other experienced people a targeted project management application and coordinated, in an Agile manner, a small team to full-stack develop the ASP.NET MVC architecture, following standard patterns, integrating IoT Mechanisms, REST Web APIs, Unit Testing and many more.`,
-        tags: ["C#", "ASP.NET Core", "EF Core", "ASP.NET MVC", "Entity Framework 6", "DI", "Autofac", "IoC", "Unit Tests", "Angular 5", "HTML5", "CSS3", "JS(ES6)", "Bootstrap", "AJAX", "jQuery", "Chart.js", "MySql", "Scrum", "Visual Studio 2017", "Trello", "DBeaver", "Coordination", "Architecture"]
+        🎉 Engineered with the help of other experienced people a targeted (oil & gas construction sites) project management application and coordinated, in an Agile manner, a small team to develop the new ASP.NET MVC architecture, following standard patterns, integrating IoT Mechanisms, REST Web APIs, Unit Testing and many more.`,
+        tags: ["Coordination", "Architecture", "ASP.NET Core", "C#", "EF Core", "ASP.NET MVC", "Entity Framework 6", "DI", "Autofac", "IoC", "Unit Tests", "Angular 5", "HTML5", "CSS3", "JS(ES6)", "TS", "Bootstrap", "AJAX", "jQuery", "Chart.js", "MySql", "MSSQL", "Scrum", "Agile", "Visual Studio 2017", "Trello", "Notion", "Jira", "DBeaver"]
     },
     {
         title: "🍷 .NET Developer",
@@ -443,7 +433,7 @@ var allProjects = [{
         category: "side-projects",
         time: "May 2018",
         type: "Side Project / Solo / In Progress",
-        title: "REPLAY - Private Tracker Streaming App",
+        title: "REPLAY - Private Streaming App",
         description: "Web application which integrates many existing web engines for creating awesome streaming experience from private trackers.",
         url: {
             link: "javascript:void()",
@@ -497,7 +487,7 @@ var allProjects = [{
     },{
         category: "uni-projects",
         time: "May 2017",
-        type: "Uni / " + cLinks.cezy,
+        type: "Uni / + " + cLinks.cezy,
         title: "Numerical Calculus - Labs &amp; Assignments",
         description: "Small projects (in Java & C#) that solve different complicated mathematical problems: matrices, aproximations, automated equation solving etc.",
         url: {
@@ -508,7 +498,7 @@ var allProjects = [{
     },{
         category: "uni-projects",
         time: "May 2017",
-        type: "Uni / " + cLinks.cezy,
+        type: "Uni / + " + cLinks.cezy,
         title: "Computer Graphics - Labs &amp; Assignments",
         description: "Small projects (in C++) that test the 'power' of raw computer graphic engines. Most of them contain lots of mathematics.",
         url: {
@@ -530,7 +520,7 @@ var allProjects = [{
     }, {
         category: "uni-projects",
         time: "Jan 2017",
-        type: "Uni / " + cLinks.ioana + ", " + cLinks.cezy + ", " + cLinks.marta + ", " + cLinks.alberto + ", " + cLinks.bianca + ", " + cLinks.tifui + ", " + cLinks.vali,
+        type: "Uni / + " + cLinks.ioana + ", " + cLinks.cezy + ", " + cLinks.marta + ", " + cLinks.alberto + ", " + cLinks.bianca + ", " + cLinks.tifui + ", " + cLinks.vali,
         title: "Solution1 - Web App",
         description: "Next gen/alternative of Fun Web. Replaces multiplayer concepts with a strong assignments uploads/copyrights check / grades management. Check Github for full details.",
         url: {
@@ -597,7 +587,7 @@ var allProjects = [{
     }, {
         category: "uni-projects",
         time: "June, 2016?",
-        type: "Uni / " + cLinks.groza + ", " + cLinks.cezy + ", " + cLinks.dorin,
+        type: "Uni / + " + cLinks.groza + ", " + cLinks.cezy + ", " + cLinks.dorin,
         title: "Fun Web - Node.JS based Learning &amp; Multiplayer WebApp",
         description: "Fun educational app for learning courses, gaining XP and then competing in multiplayer Q&A competitions. Check Github for full details.",
         url: {

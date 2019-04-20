@@ -386,7 +386,12 @@ a.mobile-menu-opener:hover {
 	outline: none;
 }
 
-section:nth-child(2n) {
+.smaller-padding {
+	padding-top: 0px !important;
+	margin-top: -20px;
+}
+
+.backgrounded {
 	background: #f5f5f5;
 }
 
