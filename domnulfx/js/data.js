@@ -48,10 +48,10 @@ var socialLinks = [{
     {
         url: "https://twitter.com/fxsays",
         icon: "fa-twitter",
-        title: "Facebook"
+        title: "Twitter"
     },
     {
-        url: "https://www.instagram.com/monsieurfx/",
+        url: "https://www.instagram.com/monsieurfx",
         icon: "fa-instagram",
         title: "Instagram"
     }

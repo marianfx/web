@@ -1,5 +1,6 @@
 /* Initializers */
 var imagesAvailable = 6;
+var currentImage = 4;
 var lazyLoadInstance = new LazyLoad({
     elements_selector: ".lazy"
     // ... more custom settings?
@@ -29,32 +30,53 @@ function afterLoadedDissapears() {
     $("body").addClass("scrollbar");
     $("body").addClass("scyan");
     $('[data-toggle="tooltip"]').tooltip(); //enable tooltips
+    // $(".hidden-images").removeClass("hidden");
+    setChangingInterval();
 }
 $(pluginspreparer);
 
-function startChangingImages() {
-    let divContent = "";
-    for(let j = 1; j <= imagesAvailable; j++) {
-        divContent += "<div class='lazy lazy" + j + "' data-bg='url(img/portraits/portrait" + j + ".jpeg)'></div>"
-    }
-    $(".hidden-images").html(divContent);
+function initializeImageLoad() {
 
-    changeImage(imagesAvailable);
-    let intrvl = setInterval(() => {
-        changeImage(imagesAvailable);
-    }, 10000);
 }
 
-function changeImage(imagesAvailable) {
-    var randomImageId = Math.floor(Math.random() * imagesAvailable + 1);
-    // $(".banner").fadeOut(100, function() {
-        $(".banner").attr("data-bg", $(".lazy" + randomImageId).attr("data-bg"));
-        $(".banner").attr("data-was-processed", false);
-    // }).fadeIn(100);
+function startChangingImages() {
+    // let divContent = "";
+    // for(let j = 1; j <= imagesAvailable; j++) {
+    //     divContent += "<div class='lazy lazy" + j + "' data-src='img/portraits/portrait" + j + ".png' style='background-image:url(img/portraits/portrait" + j + ".png)'></div>"
+    // }
+    // $(".hidden-images").html(divContent);
 
-    if (lazyLoadInstance) {
-        lazyLoadInstance.update();
-    }
+    changeImage(currentImage, true);
+}
+
+function setChangingInterval() {
+    let intrvl = setInterval(() => {
+        var randomImageId = currentImage;
+        while(true) {
+            randomImageId = Math.floor(Math.random() * imagesAvailable + 1);
+            if (randomImageId !== currentImage)
+                break;
+        }
+        currentImage = randomImageId;
+        changeImage(randomImageId);
+    }, 7000);
+}
+
+function changeImage(randomImageId, direct) {
+    let divContent = "<div class='lazy lazy" + randomImageId + "' data-src='img/portraits/portrait" + randomImageId + ".png' style='background-image:url(img/portraits/portrait" + randomImageId + ".png)'></div>"
+    $(".hidden-images").html(divContent);
+
+    setTimeout(() => {
+        $(".banner").fadeOut(200, function() {
+            $(".banner").css("background-image", "url(img/portraits/portrait" + randomImageId + "_small.jpeg)");
+            $(".banner").attr("data-src", $(".lazy" + randomImageId).attr("data-src"));
+            $(".banner").attr("data-was-processed", false);
+
+            if (lazyLoadInstance) {
+                lazyLoadInstance.update();
+            }
+        }).fadeIn(200);
+    }, direct ? 100 : 6000);
 }
 
 

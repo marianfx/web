@@ -438,6 +438,7 @@ a.mobile-menu-opener:hover {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 50% 30%;
+	background-color: black;
 }
 
 .banner::before {
@@ -451,7 +452,7 @@ a.mobile-menu-opener:hover {
 	background: rgba(0, 0, 0, 0.5);
 }
 
-.hidden-images {
+.hidden-images.hidden {
 	display: none;
 }
 
