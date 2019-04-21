@@ -1,5 +1,9 @@
 /* Initializers */
 var imagesAvailable = 6;
+var lazyLoadInstance = new LazyLoad({
+    elements_selector: ".lazy"
+    // ... more custom settings?
+});
 var pluginspreparer = function () {
     "use strict";
 
@@ -29,6 +33,12 @@ function afterLoadedDissapears() {
 $(pluginspreparer);
 
 function startChangingImages() {
+    let divContent = "";
+    for(let j = 1; j <= imagesAvailable; j++) {
+        divContent += "<div class='lazy lazy" + j + "' data-bg='url(img/portraits/portrait" + j + ".jpeg)'></div>"
+    }
+    $(".hidden-images").html(divContent);
+
     changeImage(imagesAvailable);
     let intrvl = setInterval(() => {
         changeImage(imagesAvailable);
@@ -37,9 +47,14 @@ function startChangingImages() {
 
 function changeImage(imagesAvailable) {
     var randomImageId = Math.floor(Math.random() * imagesAvailable + 1);
-    $(".banner").fadeOut(100, function() {
-        $(".banner").css("background-image", "url(img/portraits/portrait" + randomImageId + ".jpeg)");
-    }).fadeIn(100);
+    // $(".banner").fadeOut(100, function() {
+        $(".banner").attr("data-bg", $(".lazy" + randomImageId).attr("data-bg"));
+        $(".banner").attr("data-was-processed", false);
+    // }).fadeIn(100);
+
+    if (lazyLoadInstance) {
+        lazyLoadInstance.update();
+    }
 }
 
 
@@ -283,12 +298,7 @@ function attachContact() {
             error = "If you have no idea, then it means we have a problem - we can't communicate! 😭 (you must insert a message at least 50 characters)";
 
         if (error != '')
-            return swal({
-                title: "Oh, snap!",
-                text: error,
-                icon: "warning",
-                button: "I Understand and Accept."
-            });
+            return $.notify("Oh, snap! " + error, { position:"bottom-right", className: "error" });
 
         $.ajax({
             type: 'POST',
@@ -299,14 +309,14 @@ function attachContact() {
                 'message': message
             },
             success: function(response){
-                swal({ text: "Success!"});
+                $.notify("Success!", { position:"bottom-right", className: "success" });
             },
             failure: function(response) {
                 if (response && response.error){
-                    swal({ title: "Cannot send", icon: "warning", "text": response.error});
+                    $.notify("Cannot send. " + response.error, { position:"bottom-right", className: "warn" });
                 }
                 else {
-                    swal({ title: "Cannot send", icon: "warning", "text": "Some error happened."});
+                    $.notify("Cannot send. " + "Some error happened.", { position:"bottom-right", className: "warn" });
                 }
             }
         });
