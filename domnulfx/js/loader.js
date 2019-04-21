@@ -42,7 +42,7 @@ function startChangingImages() {
     changeImage(imagesAvailable);
     let intrvl = setInterval(() => {
         changeImage(imagesAvailable);
-    }, 15000);
+    }, 10000);
 }
 
 function changeImage(imagesAvailable) {
