@@ -456,6 +456,10 @@ a.mobile-menu-opener:hover {
 	display: none;
 }
 
+.hidden-images.barely-visible {
+	visibility: hidden;
+}
+
 .caption-info {
 	position: absolute;
 	top: 50%;
