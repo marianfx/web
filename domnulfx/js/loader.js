@@ -144,8 +144,15 @@ function attachSkills() {
     _.forEach(cards, function (card) {
         var container = $(`<div class="progress-block wow fadeInLeft"></div>`);
         _.forEach(card.data, function (data) {
+            var toolTipText = '';
+            var classText = 'class="skill-text"';
+            if (data.tooltip) {
+                classText = 'class="skill-text interestingcursor"';
+                toolTipText = 'data-toggle="tooltip" data-placement="bottom" title="' + data.tooltip + '"';
+            }
+
             var element = `<div class="single-progressbar">
-                            <div class="skill-text">
+                            <div ` + classText + " " + toolTipText + `>
                                 <span>` + data.title + `</span>
                                 <span class="skill-per"></span>
                             </div>

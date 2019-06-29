@@ -1755,3 +1755,7 @@ background-color: #F6BB42;
 color:white;
 background-color: #E9573F;
 }
+
+.interestingcursor {
+	cursor: pointer;
+}

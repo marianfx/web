@@ -118,7 +118,7 @@ var interestsData = [{
     },
     {
         title: "Music",
-        link: "https://soundsgood.co/me/curator/heartbeats-fx",
+        link: "https://open.spotify.com/user/marianfx69?si=vJS66F5pRmmoYvJ4SlqqdQ",
         icon: "fa-music"
     },
     {
@@ -233,15 +233,18 @@ var cards = [
         title: "Technologies Mastered",
         data: [{
                 title: "ASP.NET (+Core) & Frameworks",
-                value: 92
+                value: 92,
+                tooltip: "Includes ASP.NET MVC, ASP.NET Web API, .NET Core alternatives and many Nu-Get libraries for any usecase"
             },
             {
                 title: "JS / CSS & Frameworks",
-                value: 80
+                value: 80,
+                tooltip: "Includes jQuery, Angular (2+), Bootstrap, Material Design, Chart.js and many other smaller packages for any usecase"
             },
             {
                 title: "Databases / ORMs / Any",
-                value: 82
+                value: 82,
+                tooltip: "Includes T-SQL & PL/SQL knowledge, advanced query writing, and most of all Entity Framework proeficiency (and extras like EFPlus, Linq); also other query-builder like libs"
             },
             {
                 title: "Agile & Customs",
@@ -253,19 +256,23 @@ var cards = [
             },
             {
                 title: ".NET Framework",
-                value: 69
+                value: 69,
+                tooltip: "Refers to other .NET Framework knowledge, like WCF, WFA, WPF"
             },
             {
                 title: "Node.js & Frameworks",
-                value: 60
+                value: 60,
+                tooltip: "Never used in professional environment, only as test-playground"
             },
             {
                 title: "Functional Programming",
-                value: 60
+                value: 60,
+                tooltip: "Applied with JavaScript mostly, and a long time ago with Python"
             },
             {
                 title: "Regular Expressions",
-                value: 50
+                value: 50,
+                tooltip: "Includes basic knowledge, mostly used when searching in files and when validating data"
             },
         ]
     },
@@ -305,37 +312,42 @@ var cards = [
 
 var firstJobYear = 2015;
 var jobs = [{
-        title: "🍹 Software Engineer",
+        title: "🍹 Software Developer",
         employer: "Kirey Group",
         period: "Aug. 2017 - Present (?)",
-        description: `In the process of testing social skills and unveiling new lead developer techniques. <br/>  
-        🎉 Currently working on a full-stack project, coordinating a team in re-engineering an old finance application with Angular, .NET Core, following the Scrum methodology.  <br/> 
-        Previously:  <br/> 
-        🎉 Engineered with the help of other experienced people a targeted (oil & gas construction sites) project management application and coordinated, in an Agile manner, a small team to develop the new ASP.NET MVC architecture, following standard patterns, integrating IoT Mechanisms, REST Web APIs, Unit Testing and many more.`,
-        tags: ["Coordination", "Architecture", "ASP.NET Core", "C#", "EF Core", "ASP.NET MVC", "Entity Framework 6", "DI", "Autofac", "IoC", "Unit Tests", "Angular 5", "HTML5", "CSS3", "JS(ES6)", "TS", "Bootstrap", "AJAX", "jQuery", "Chart.js", "MySql", "MSSQL", "Scrum", "Agile", "Visual Studio 2017", "Trello", "Notion", "Jira", "DBeaver"]
+        description: `🎉 2018-2019: Testing social skills and unveiling lead developer techniques. The activity consists of developing a full-stack project, coordinating a team in re-engineering an old finance application with Angular, .NET Core and all the fancy terms, following the Scrum methodology.  <br/> <br/> 
+        🎉 2017-2018: Engineered with the help of other experienced people a targeted (oil & gas construction sites) project management application and coordinated, in an Agile manner, a small team to develop the new ASP.NET MVC architecture, following standard patterns, integrating IoC Mechanisms, REST Web APIs, front-end development, Unit Testing and many more.`,
+        tags: ["Coordination", "Architecture", "ASP.NET Core", "C#", "EF Core", "ASP.NET MVC", "Entity Framework", "Advanced EF", "DI", "Autofac", "IoC", "Unit Tests", "Angular", "HTML", "CSS", "JS(ES6)", "TS", "Bootstrap", "AJAX", "jQuery", "Chart.js", "Material Design", "MySql", "MSSQL", "Scrum", "Agile", "Visual Studio", "Trello", "Notion", "Jira", "DBeaver"]
     },
     {
         title: "🍷 .NET Developer",
         employer: "KireyEst",
         period: "Oct. 2015 - Jul. 2017 (<2 years)",
-        description: `Involved in a wide range of activities, from Desktop applications to automated testing and web developing, working part-time while also studying. ☕.`,
+        description: `Involved in a wide range of activities, from Desktop applications (WPF) to automated testing and web developing (Asp.NET), working part-time while also studying. ☕`,
         tags: ["C#", "VB.NET", ".NET Framework", "WPF - MVVM", "ASP.NET MVC", "ASP.NET Web Forms", "Entity Framework 6", "LINQ", "T-SQL", "Visual Studio 2015", "SQL Server 2012", "TFS", "Telerik", "Tricks", "Understanding of Teams"]
     },
     {
         title: "🍼 .NET Intern",
         employer: "KireyEst",
         period: "Jul. 2015 - Sep. 2015 (3 months)",
-        description: `<p>First Internship 🎉🎉🎉</p>
-                            <p>Trained by a supervisor in a long list of .NET Technologies by realizing small projects (enum: C#, VB.NET, ASP.NET WebForms, ASP.NET MVC, ADO.NET, Entity Framework, WPF – MVVM, WFC, Spring.NET, T-SQL, Javascript & jQuery, HTML, CSS... 😵).</p>`,
+        description: `Trained by a supervisor in a long list of .NET Technologies by realizing small projects (enum: C#, VB.NET, ASP.NET WebForms, ASP.NET MVC, ADO.NET, Entity Framework, WPF – MVVM, WFC, Spring.NET, T-SQL, Javascript & jQuery, HTML, CSS... 😵).`,
         tags: ["C#", "VB.NET", "ASP.NET Web Forms", "ASP.NET MVC", "ADO.NET", "Entity Framework 5", "WPF - MVVM", "WCF", "T-SQL", "HTML", "CSS", "JS", "JQuery", "Visual Studio 2012", "SQL Server 2008 &amp; 2012", "Training"]
     }
 ];
 
-var edus = [{
+var edus = [
+    {
+        institution: "🌞 Udemy - Scrum Certification Prep + Scrum Master + Agile Scrum Training",
+        title: '<a href="http://ude.my/UC-SOSRGIMB" target="_blank">Certificate</a>',
+        period: "Jun. 2019 (1 month)",
+        description: ``,
+        tags: ["Agile", "Scrum", "Scrum Master"]
+    },
+    {
         institution: "🎓 Faculty of Computer Science, „Alexandru Ioan Cuza” University, Iași",
         title: "Bachelor's Degree, Computer Science",
         period: "2014 - 2017 (3 years)",
-        description: `Status: finished, no license yet.<br/> Three years of learning more or less useful knowledge (presented in a
+        description: `Status: finished, no license.<br/> Three years of learning more or less useful knowledge (presented in a
                 more or less optimized fashion), meeting new people and discovering new ideas about my future self.`,
         tags: ["Web Technologies", "Cloud Computing", ".NET", ".NET Advanced", "OOP", "Programming Engineering", "Computer Networks", "Databases &amp; DBMS Practice", "Operating Systems - Linux", "Python", "Game design &amp; Development", "Computer Graphics", "Regular Expressions / Formal Languages", "Mathematics", "Logics for Computer Science", "Machine Learning", "Artificial Intelligence", "Data Structures", "Algorithms Design", "Java"]
     },
@@ -432,7 +444,20 @@ contributors.forEach(element => {
 });
 
 /* All projects AREA */
-var allProjects = [{
+var allProjects = [
+    {
+        category: "side-projects",
+        time: "Nov 2018",
+        type: "Side Project / Solo / Finished",
+        title: "Autofiller - Gurushots Automation Bot",
+        description: "Created as a side project in order to test if Gurushots' voting sessions and friend search can be automated using Puppeteer and .NET Core.",
+        url: {
+            link: "javascript:void()",
+            title: "Private work"
+        },
+        image: "./img/portfolio/gurushots.jpg"
+    },
+    {
         category: "side-projects",
         time: "May 2018",
         type: "Side Project / Solo / In Progress",
@@ -443,7 +468,8 @@ var allProjects = [{
             title: "Private work"
         },
         image: "./img/portfolio/replay.jpg"
-    },{
+    },
+    {
         category: "work-projects",
         time: "May. 2018",
         type: "Work / In progress",
