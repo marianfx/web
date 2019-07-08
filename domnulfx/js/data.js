@@ -457,7 +457,7 @@ var allProjects = [
         time: "Nov 2018",
         type: "Side Project / Solo / Finished",
         title: "Autofiller - Gurushots Automation Bot",
-        description: "Created as a side project in order to test if Gurushots' voting sessions and friend search can be automated using Puppeteer and .NET Core.",
+        description: "Created as a side project in order to test if Gurushots' voting sessions and friend search can be automated using Puppeteer and .NET Core. Private project.",
         url: {
             link: "javascript:void()",
             title: "Private work"
@@ -468,8 +468,8 @@ var allProjects = [
         category: "side-projects",
         time: "May 2018",
         type: "Side Project / Solo / In Progress",
-        title: "REPLAY - Private Streaming App",
-        description: "Web application which integrates many existing web engines for creating awesome streaming experience from private trackers.",
+        title: "Replay.NET - Streaming App Playground",
+        description: "A web application which tries to integrate many existing movie engines (IMDb, Trakt, Taste) for creating awesome movie browsing and one-place streaming experience. Includes many technology playgrounds, like ASP.NET Core, scraping and testing with Puppeteer, streaming from http and p2p sources, integrating other existing apps with Electron etc. Private project.",
         url: {
             link: "javascript:void()",
             title: "Private work"
@@ -479,9 +479,9 @@ var allProjects = [
     {
         category: "work-projects",
         time: "May. 2018",
-        type: "Work / In progress",
-        title: "RAM.NET - Risk Asset Management",
-        description: "Web application, reengineered after an old Desktop app with ASP.NET Core &amp; Angular, which does lots of banking stuff (really complicated).",
+        type: "Work / Finished",
+        title: "Codename \"AM\" - .NET Core Asset Management Tool",
+        description: "Web application, reengineered after an old Desktop app with ASP.NET Core &amp; Angular, which does lots of banking stuff (really complicated). Further details are private.",
         url: {
             link: "javascript:void()",
             title: "Private work"
@@ -502,8 +502,8 @@ var allProjects = [
         category: "side-projects",
         time: "Nov. 2017",
         type: "Side Project / Solo / In Progress",
-        title: "LIFR - Instagram Bot &amp; Manager",
-        description: "Web, Node.JS based application for managing Instagram account - full access to followers, unfollowers, history, automated tasks.",
+        title: "LIFR - Instagram Manager",
+        description: "Web, Node.JS based application for managing Instagram account - access to followers, unfollowers, history, automated tasks. Private project.",
         url: {
             link: "javascript:void()",
             title: "Private work"
@@ -513,8 +513,8 @@ var allProjects = [
         category: "work-projects",
         time: "Aug. 2017",
         type: "Work / Finished",
-        title: "Promis.NET - Oil & Gas Project Management",
-        description: "A smart web application, ASP.NET MVC &amp; (*insert many FE libs here) of which sole purpose is the management of huge oil & gas project's construction and resources.",
+        title: "Codename \"Promise\" - Oil&Gas Project Management",
+        description: "A smart web application, ASP.NET MVC &amp; (*insert many FE libs here) of which sole purpose is the management of huge oil & gas project's construction and resources. Further details are private.",
         url: {
             link: "javascript:void()",
             title: "Private work"
