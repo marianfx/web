@@ -1763,3 +1763,7 @@ background-color: #E9573F;
 .interestingcursor {
 	cursor: pointer;
 }
+
+.commercial-images {
+	visibility: hidden;
+}
