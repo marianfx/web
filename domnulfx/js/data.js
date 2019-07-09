@@ -96,14 +96,20 @@ var contactData = {
 };
 var profiFile = {
     description: "Sassy software enthusiast with great skills of communication, attention to details & architectural thinking. Based on my fast learning algorithm and team choreography understanding, I'm looking forward to increasing my software engineering skills and growing myself into the better developer. Open minded, I'll be always looking for a new challenge to take on.",
-    link1: {
-        title: "Download Resume",
-        link: "/files/cv_pro.pdf"
-    },
-    link2: {
-        title: "Linkedin",
-        link: "https://www.linkedin.com/in/marianfx/"
-    }
+    links: [
+        {
+            title: "Linkedin (Web)",
+            link: "https://www.linkedin.com/in/marianfx/"
+        },
+        {
+            title: "Europass (PDF)",
+            link: "/files/CV-ESP-Europass-20190709-Focsa_Marian-EN.pdf"
+        },
+        {
+            title: "Linkedin format (PDF)",
+            link: "/files/cv_pro.pdf"
+        }
+    ]
 };
 
 var interestsIntro = {

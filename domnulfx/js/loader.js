@@ -118,11 +118,18 @@ function attachBasicInfo() {
 }
 
 function attachProfessionalProfile() {
-    var element = $(`<p>` + profiFile.description + `</p>
-                    <a class="btn btn-primary .profi-link1" target="_blank" href="` + profiFile.link1.link + `">` + profiFile.link1.title + `</a>
-                    <a class="btn btn-default .profi-link2" target="_blank" href="` + profiFile.link2.link + `">` + profiFile.link2.title + `</a>
-                    `);
-    $('.professional-profile').append(element);
+    var elements = ``;
+    _.forEach(profiFile.links, function(link){
+        elements = elements + `<li><a href="` + link.link + `" target="_blank">` + link.title + `</a></li>`;
+    });
+    var overall = `<p>` + profiFile.description + `</p>
+                    <div class="btn-group">
+                        <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resume <span class="caret"></span></a>
+                        <ul class="dropdown-menu">`
+                            + elements + 
+                        `</ul>
+                    </div>`;
+    $('.professional-profile').append(overall);
 }
 
 function attachInterests() {
