@@ -389,7 +389,7 @@ var edus = [
     {
         institution: "🎒 „Ștefan Procopiu” High-School, Vaslui",
         title: "High School Diploma in Mathematics and Computer Science",
-        period: "2010 - 2015 (4 years)",
+        period: "2010 - 2014 (4 years)",
         description: `Also obtained <b>Professional Certificate</b>, <b>Baccalaureate Diploma</b> and <b>English Certificate</b>. 
             <hr>
             Baccalaureate - Jun 2014. Avg: <b>9.86</b> <br/> 
