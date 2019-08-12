@@ -343,6 +343,13 @@ var jobs = [{
 
 var edus = [
     {
+        institution: "🌞 Udemy - Agile Project Management: Scrum Step by Step",
+        title: '<a href="http://ude.my/UC-30XT1MAU" target="_blank">Certificate</a>',
+        period: "Aug. 2019 (1 month)",
+        description: ``,
+        tags: ["Angular"]
+    },
+    {
         institution: "🌞 Udemy - Angular 8 (formerly Angular 2) - The Complete Guide",
         title: '<a href="http://ude.my/UC-4GREQAHJ" target="_blank">Certificate</a>',
         period: "JuL. 2019 (1 month)",
