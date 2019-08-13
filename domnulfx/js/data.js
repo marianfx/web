@@ -64,7 +64,7 @@ var infos = [{
     },
     {
         title: "Email",
-        value: '<a href="mailto:marian.focsa@outlook.com">marian.focsa@outlook.com</a>'
+        value: '<a href="mailto:contact@marianfocsa.info">contact@marianfocsa.info</a>'
     },
     {
         title: "Phone",
@@ -90,12 +90,12 @@ var infos = [{
 var contactData = {
     address: `Iași, România`,
     phone: "+40 749-936-***",
-    mails: ["marian.focsa@outlook.com", "marian.focsa@kireygroup.com"],
+    mails: ["contact@marianfocsa.info", "marian.focsa@kireygroup.com"],
     whentocontact: ["Week: 09:00 AM - 19:00 PM", "Weekend: 11 AM - 2 PM"],
     messengerLink: "https://m.me/marian.fx"
 };
 var profiFile = {
-    description: "Sassy software enthusiast with great skills of communication, attention to details & architectural thinking. Based on my fast learning algorithm and team choreography understanding, I'm looking forward to increasing my software engineering skills and growing myself into the better developer. Open minded, I'll be always looking for a new challenge to take on.",
+    description: "Sassy software enthusiast with great skills of communication, attention to details & architectural thinking. Based on my fast learning algorithm and team choreography understanding, I'm looking forward to increasing my software engineering skills and growing myself into the better developer by tackling difficult projects and coming front with innovative solutions. Open-minded, I'll be always looking for a new challenge to take on. ",
     links: [
         {
             title: "Linkedin (Web)",
