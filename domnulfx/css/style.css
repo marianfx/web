@@ -1126,6 +1126,16 @@ b {
 	color: #fff;
 }
 
+.wrapper .header .date {
+	width: 50%;
+    margin-left: -13px;
+    text-align: left;
+	background-color: darkslategray;
+	color: white;
+	padding-left: 5px;
+	margin-top: -13px;
+}
+
 /****************************** Blog **************************************/
 
 .post {

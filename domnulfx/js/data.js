@@ -466,8 +466,32 @@ contributors.forEach(element => {
 /* All projects AREA */
 var allProjects = [
     {
+        category: "work-projects",
+        time: "May 2018 - Present",
+        type: "Work / Finished",
+        title: "Codename \"AM\" - .NET Core Banking Assets Manager",
+        description: "Web application, reengineered after an old Desktop app, with ASP.NET Core &amp; Angular, which does banking work, algorithms and management.",
+        url: {
+            link: "javascript:void()",
+            title: "Private work"
+        },
+        image: "./img/portfolio/ramnet.jpg"
+    }, 
+    {
         category: "side-projects",
-        time: "Nov 2018",
+        time: "Nov. 2018 - Present",
+        type: "Side Project / Solo / In Progress",
+        title: "Replay.NET - Streaming App Playground",
+        description: "A web application which tries to integrate many existing movie engines (IMDb, Trakt, Taste) for creating awesome movie browsing and one-place streaming experience.",
+        url: {
+            link: "javascript:void()",
+            title: "Private work"
+        },
+        image: "./img/portfolio/replay.jpg"
+    },
+    {
+        category: "side-projects",
+        time: "Nov. 2018 - Dec. 2018",
         type: "Side Project / Solo / Finished",
         title: "Autofiller - Gurushots Automation Bot",
         description: "Created as a side project in order to test if Gurushots' voting sessions and friend search can be automated using Puppeteer and .NET Core. Private project.",
@@ -478,43 +502,20 @@ var allProjects = [
         image: "./img/portfolio/gurushots.jpg"
     },
     {
-        category: "side-projects",
-        time: "May 2018",
-        type: "Side Project / Solo / In Progress",
-        title: "Replay.NET - Streaming App Playground",
-        description: "A web application which tries to integrate many existing movie engines (IMDb, Trakt, Taste) for creating awesome movie browsing and one-place streaming experience. Includes many technology playgrounds, like ASP.NET Core, scraping and testing with Puppeteer, streaming from http and p2p sources, integrating other existing apps with Electron etc. Private project.",
-        url: {
-            link: "javascript:void()",
-            title: "Private work"
-        },
-        image: "./img/portfolio/replay.jpg"
-    },
-    {
         category: "work-projects",
-        time: "May. 2018",
-        type: "Work / Finished",
-        title: "Codename \"AM\" - .NET Core Asset Management Tool",
-        description: "Web application, reengineered after an old Desktop app with ASP.NET Core &amp; Angular, which does lots of banking stuff (really complicated). Further details are private.",
-        url: {
-            link: "javascript:void()",
-            title: "Private work"
-        },
-        image: "./img/portfolio/ramnet.png"
-    }, {
-        category: "work-projects",
-        time: "Jan. 2018",
+        time: "Jan. 2018 - Present",
         type: "Work Project / Continuous",
-        title: "Problem killing and training samples",
+        title: "LeetCode - Solved Problems",
         description: "Consists mostly of solving, in different ways, problems from LeetCode (a website that approaches different software engineering problems) and training materials.",
         url: {
-            link: "https://bitbucket.org/marianfx/kirey-tuts/src/dev-fx/",
-            title: "Check repo"
+            link: "https://github.com/marianfx/solver-leetcode",
+            title: "Check GitHub"
         },
         image: "./img/portfolio/leetcode.png"
     }, {
         category: "side-projects",
-        time: "Nov. 2017",
-        type: "Side Project / Solo / In Progress",
+        time: "Nov. 2017 - ?",
+        type: "Side Project / Solo / Discontinued",
         title: "LIFR - Instagram Manager",
         description: "Web, Node.JS based application for managing Instagram account - access to followers, unfollowers, history, automated tasks. Private project.",
         url: {
@@ -522,89 +523,120 @@ var allProjects = [
             title: "Private work"
         },
         image: "./img/portfolio/lifr.png"
-    },{
+    },
+    {
         category: "work-projects",
-        time: "Aug. 2017",
+        time: "Aug. 2017 - May 2018",
         type: "Work / Finished",
         title: "Codename \"Promise\" - Oil&Gas Project Management",
-        description: "A smart web application, ASP.NET MVC &amp; (*insert many FE libs here) of which sole purpose is the management of huge oil & gas project's construction and resources. Further details are private.",
+        description: "A smart web application, ASP.NET MVC &amp; (*insert FE libs) of which purpose is the management of huge oil & gas project's construction and resources",
         url: {
             link: "javascript:void()",
             title: "Private work"
         },
         image: "./img/portfolio/promisnet.jpg"
-    },{
+    },
+    {
         category: "uni-projects",
         time: "May 2017",
         type: "Uni / + " + cLinks.cezy,
-        title: "Numerical Calculus - Labs &amp; Assignments",
+        title: "Learning Curve - Numerical Calculus",
         description: "Small projects (in Java & C#) that solve different complicated mathematical problems: matrices, aproximations, automated equation solving etc.",
         url: {
             link: "https://bitbucket.org/javafxteam/cn-labs",
             title: "Check repo"
         },
         image: "./img/portfolio/labs-cn.jpg"
-    },{
+    },
+    {
         category: "uni-projects",
         time: "May 2017",
         type: "Uni / + " + cLinks.cezy,
-        title: "Computer Graphics - Labs &amp; Assignments",
-        description: "Small projects (in C++) that test the 'power' of raw computer graphic engines. Most of them contain lots of mathematics.",
+        title: "Learning Curve - Computer Graphics",
+        description: "Small projects (in C++) that test the 'power' of raw computer graphic engines. Most of them contain lots of mathematics and output beautiful graphics.",
         url: {
             link: "https://bitbucket.org/javafxteam/cg-labs",
             title: "Check repo"
         },
         image: "./img/portfolio/labs-cf.jpg"
-    }, {
+    }, 
+    {
+        category: "uni-projects",
+        time: "Jan 2017",
+        type: "Uni / + " + cLinks.ioana + ", " + cLinks.cezy + ", " + cLinks.marta + ", " + cLinks.alberto + ", " + cLinks.bianca + ", " + cLinks.tifui + ", " + cLinks.vali,
+        title: "Solution1 - Learning & Homeworks Manager",
+        description: "Next gen/alternative of Fun Web. Replaces multiplayer concepts with a strong assignments uploads/copyrights check/grades management.",
+        url: {
+            link: "https://github.com/tabby336/Solution1",
+            title: "Check Github"
+        },
+        image: "./img/portfolio/solution1.jpg"
+    }, 
+    {
         category: "uni-projects",
         time: "Jan 2017",
         type: "Uni / Solo",
-        title: "Cloud Computing - Labs &amp; Assignments",
+        title: "Learning Curve - Cloud Computing",
         description: "Small projects using different languages - a web youtube mp3 search & download tool, a REST API implemented without a framework, and a websockets collaborative markdown editor.",
         url: {
             link: "https://bitbucket.org/marianfx/cc-labs",
             title: "Check repo"
         },
         image: "./img/portfolio/labs-cloud.jpg"
-    }, {
-        category: "uni-projects",
-        time: "Jan 2017",
-        type: "Uni / + " + cLinks.ioana + ", " + cLinks.cezy + ", " + cLinks.marta + ", " + cLinks.alberto + ", " + cLinks.bianca + ", " + cLinks.tifui + ", " + cLinks.vali,
-        title: "Solution1 - Web App",
-        description: "Next gen/alternative of Fun Web. Replaces multiplayer concepts with a strong assignments uploads/copyrights check / grades management. Check Github for full details.",
-        url: {
-            link: "https://github.com/tabby336/Solution1",
-            title: "Check Github"
-        },
-        image: "./img/portfolio/solution1.png"
-    }, {
+    }, 
+    {
         category: "uni-projects",
         time: "Jan 2017",
         type: "Uni / Solo / Labs",
-        title: "Python - Labs &amp; Assignments",
+        title: "Learning Curve - Python",
         description: "Contains examples of doing many things basic things in Python, including more advanced ones like HTTP content server and Site Image Scraper",
         url: {
             link: "https://github.com/marianfx/python-labs",
             title: "Check Github"
         },
-        image: "./img/portfolio/labs-python.png"
+        image: "./img/portfolio/labs-python.jpg"
     }, {
         category: "side-projects",
         time: "Jan 2017",
         type: "Side Project / Solo",
         title: "ID3 Helper (Machine Learning) - Web / Android",
-        description: "Based on Cordova engine, this is a helper for the ID3 Machine Learning Algorithm, which can be used on web or compiled for Android. Check Github for full details.",
+        description: "Based on Cordova engine, this is a helper for the ID3 Machine Learning Algorithm, which can be used on web or mobile. Check Github for full details.",
         url: {
             link: "https://github.com/marianfx/com.fx.Id3Helper",
             title: "Check Github"
         },
         image: "./img/portfolio/id3-ml.png"
-    }, {
+    },
+    {
+        category: "work-projects",
+        time: "Nov. 2016 - Aug. 2017",
+        type: "Work / Finished",
+        title: "Codename \"Product Placement\" - Banking application",
+        description: "Developed WPF Desktop application, withing an internal MVVM framework, following best practices, adding architectural ideas and testing.",
+        url: {
+            link: "javascript:void()",
+            title: "Private work"
+        },
+        image: "./img/portfolio/product-placement.jpg"
+    },
+    {
+        category: "side-projects",
+        time: "Nov. 2016 - Present",
+        type: "Side Project / Solo / In Progress",
+        title: "Codingame - Solved problems",
+        description: "Codingame is a competitive website where people can solve different problems, which are presented in the form of games. This project involves solving certain problems (games) from here. Full list on GitHub.",
+        url: {
+            link: "https://github.com/marianfx/solver-codingame",
+            title: "Check Github"
+        },
+        image: "./img/portfolio/codingame.jpg"
+    },  
+    {
         category: "uni-projects",
         time: "Nov. 2016",
         type: "Uni / Solo / Labs",
-        title: "Artificial Intelligence - Labs &amp; Assignments",
-        description: "Practical implementations of small AI Concents - a simple chatbot, a 4-ways Hanoi solver, A simple bot that plays chess on the Web, and some DBPedia samples.",
+        title: "Learning Curve - Artificial Intelligence",
+        description: "Practical implementations of small AI Concents - a simple chatbot, a 4-ways Hanoi solver, a simple bot that plays chess on the Web, and some DBPedia samples.",
         url: {
             link: "https://github.com/marianfx/ai-labs",
             title: "Check Github"
@@ -614,28 +646,29 @@ var allProjects = [
         category: "uni-projects",
         time: "Nov. 2016",
         type: "Uni / Solo / Labs",
-        title: ".NET Core - Labs &amp; Assignments",
-        description: "Contains learning material about .NET Core 1.0 / 1.1 - concepts of OOP, LINQ, databases and repositories, and finally webforms (not .NET Core)",
+        title: "Learning Curve - .NET Core",
+        description: "Contains learning & practice material about .NET Core 1.0 / 1.1 - concepts of OOP, LINQ, databases and repositories, and finally webforms (not .NET Core)",
         url: {
             link: "https://github.com/marianfx/dotnet-core-labs",
             title: "Check Github"
         },
-        image: "./img/portfolio/labs-netcore.png"
+        image: "./img/portfolio/labs-netcore.jpg"
     },
     {
-        category: "side-projects",
-        time: "Nov. 2016",
-        type: "Side Project / Solo / In Progress",
-        title: "Codingame - Solved problems",
-        description: "Codingame is a competitive website where people can solve different problems, which are presented in the form of games. This project involves solving certain games from the website.",
+        category: "work-projects",
+        time: "Jun. 2016 - Nov. 2016",
+        type: "Work / Finished",
+        title: "Codename \"Victory\" - Automated Tests & Tools",
+        description: "Developed a set of tools to facilitate the automated testing of a banking website; also executed and maintained a set of (Telerik) automated tests.",
         url: {
-            link: "https://bitbucket.org/fx69/codin-game-csharp",
-            title: "Check repo"
+            link: "javascript:void()",
+            title: "Private work"
         },
-        image: "./img/portfolio/codingame.jpg"
-    }, {
+        image: "./img/portfolio/tests.jpg"
+    },
+    {
         category: "uni-projects",
-        time: "June, 2016?",
+        time: "Mar. 2016 - Jun. 2016",
         type: "Uni / + " + cLinks.groza + ", " + cLinks.cezy + ", " + cLinks.dorin,
         title: "Fun Web - Node.JS based Learning &amp; Multiplayer WebApp",
         description: "Fun educational app for learning courses, gaining XP and then competing in multiplayer Q&A competitions. Check Github for full details.",
@@ -647,7 +680,7 @@ var allProjects = [
     },
     {
         category: "side-projects",
-        time: "Jan, 2016",
+        time: "Jan. 2016",
         type: "Side Project / Solo",
         title: "Change Notifier - Desktop Node.JS &amp; Electron Application",
         description: "Built with Electron, capable of running diffs on a webpage and show you only what's changed, using native notifications. Check Github for full details.",
@@ -656,7 +689,19 @@ var allProjects = [
             title: "Check Github"
         },
         image: "./img/portfolio/change-notifier.jpg"
-    }
+    },
+    {
+        category: "work-projects",
+        time: "Oct. 2015 - Jun. 2016",
+        type: "Work / Finished",
+        title: "Codename \"Anti-fraud\" - Fraud Management System",
+        description: "A smart web application, ASP.NET Web Forms and many FE libs. Entered the project when it was in progress and developed different functionalities.",
+        url: {
+            link: "javascript:void()",
+            title: "Private work"
+        },
+        image: "./img/portfolio/anti-fraud.jpg"
+    },
 ];
 
 var numbersData = [{
