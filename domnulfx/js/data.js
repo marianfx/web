@@ -103,7 +103,7 @@ var profiFile = {
         },
         {
             title: "Europass (PDF)",
-            link: "/files/CV-ESP-Europass-20190812-Focsa-EN.pdf"
+            link: "/files/CV-ESP-Europass-20190826-Marian-Focsa-EN.pdf"
         },
         {
             title: "Linkedin format (PDF)",
