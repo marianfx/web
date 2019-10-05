@@ -68,7 +68,7 @@ var infos = [{
     },
     {
         title: "Phone",
-        value: "(+40) 749-936-***"
+        value: "+40 741-579-***"
     },
     {
         title: "Date of birth",
@@ -89,7 +89,7 @@ var infos = [{
 ];
 var contactData = {
     address: `Iași, România`,
-    phone: "+40 749-936-***",
+    phone: "+40 741-579-***",
     mails: ["contact@marianfocsa.info", "marian.focsa@kireygroup.com"],
     whentocontact: ["Week: 09:00 AM - 19:00 PM", "Weekend: 11 AM - 2 PM"],
     messengerLink: "https://m.me/marian.fx"
@@ -318,26 +318,53 @@ var cards = [
 
 var firstJobYear = 2015;
 var jobs = [{
-        title: "🍹 Software Developer",
+        title: "🍹 Lead Software Developer",
         employer: "Kirey Group",
         period: "Aug. 2017 - Present (?)",
-        description: `🎉 2018-2019: Testing social skills and unveiling lead developer techniques. The activity consists of developing a full-stack project, coordinating a team in re-engineering an old finance application with Angular, .NET Core and all the fancy terms, following the Scrum methodology.  <br/> <br/> 
-        🎉 2017-2018: Engineered with the help of other experienced people a targeted (oil & gas construction sites) project management application and coordinated, in an Agile manner, a small team to develop the new ASP.NET MVC architecture, following standard patterns, integrating IoC Mechanisms, REST Web APIs, front-end development, Unit Testing and many more.`,
-        tags: ["Coordination", "Architecture", "ASP.NET Core", "C#", "EF Core", "ASP.NET MVC", "Entity Framework", "Advanced EF", "DI", "Autofac", "IoC", "Unit Tests", "Angular", "HTML", "CSS", "JS(ES6)", "TS", "Bootstrap", "AJAX", "jQuery", "Chart.js", "Material Design", "MySql", "MSSQL", "Scrum", "Agile", "Visual Studio", "Trello", "Notion", "Jira", "DBeaver"]
+        description: `Team leader/lead developer of a continuously growing team, working with a tech-stack floating around
+        .NET (Core) and Angular, collaborating with clients and managers from multiple countries.
+
+        <br/><br/>
+        <b>Related projects:</b> 
+            <a href="#project-15">Promis - Oil&Gas PM</a>,
+            <a href="#project-20">Risk Asset Manager</a>
+        <br/>
+        <b>Frameworks:</b> .NET Framework / Core, ASP.NET (Core) MVC / WebApi, Entity Framework (Core), Angular, MSUnit
+        <br/>
+        <b>Languages:</b> C#, TypeScript, JavaScript, LINQ, T-SQL flavor, MySQL flavor
+        <br/>
+        <b>Environment:</b> Visual Studio, Visual Studio Code, SQL Server Management Studio, DBeaver, GIT (Bitbucket), SVN (Tortoise), Postman, Jira, Citrix Workspace
+        <br/>
+        <b>Other:</b> HTML, CSS, jQuery, Chart.JS, Angular Material, Bootstrap, ASP.NET Core DI, Autofac, Enterprise Library, Automapper, EPPlus (Excel), NPOI (Excel), EFPlus (batch queries), SqlKata (query builder), PDFSharp, SSO`,
+        tags: ["Leadership", "ASP.NET Core", "C#", "Architecture", "Angular"]
     },
     {
-        title: "🍷 .NET Developer",
+        title: "🍷 .NET Software Developer",
         employer: "KireyEst",
         period: "Oct. 2015 - Jul. 2017 (<2 years)",
-        description: `Involved in a wide range of activities, from Desktop applications (WPF) to automated testing and web developing (Asp.NET), working part-time while also studying. ☕`,
-        tags: ["C#", "VB.NET", ".NET Framework", "WPF - MVVM", "ASP.NET MVC", "ASP.NET Web Forms", "Entity Framework 6", "LINQ", "T-SQL", "Visual Studio 2015", "SQL Server 2012", "TFS", "Telerik", "Tricks", "Understanding of Teams"]
+        description: `Worked part-time, while also studying at university, alongside both junior and experienced developers, on a various set of technologies, in order to gain experience.
+
+        <br/><br/>
+        <b>Related projects:</b> 
+            <a href="#project-1">Anti-fraud - Fraud & Risk Management</a>,
+            <a href="#project-4">"Vittoria's Secrets" - Automated Tests & Tools</a>,
+            <a href="#project-8">""Product Factory" - Banking Product Management</a>
+        <br/>
+        <b>Frameworks:</b> .NET Framework, ASP.NET WebForms, WPF (MVVM), Entity Framework, Spring.NET, Telerik
+        <br/>
+        <b>Languages:</b> C#, VB.NET, T-SQL flavor, LINQ, XAML
+        <br/>
+        <b>Environment:</b> Visual Studio, SQL Server Management Studio, TFS, SVN (Tortoise), Citrix
+        <br/>
+        <b>Other:</b> HTML, CSS, jQuery, Bootstrap`,
+        tags: ["C# / VB.NET", "ASP.NET", ".NET Framework", "WPF - MVVM", "Team Work"]
     },
     {
         title: "🍼 .NET Intern",
         employer: "KireyEst",
         period: "Jul. 2015 - Sep. 2015 (3 months)",
-        description: `Trained by a supervisor in a long list of .NET Technologies by realizing small projects (enum: C#, VB.NET, ASP.NET WebForms, ASP.NET MVC, ADO.NET, Entity Framework, WPF – MVVM, WFC, Spring.NET, T-SQL, Javascript & jQuery, HTML, CSS... 😵).`,
-        tags: ["C#", "VB.NET", "ASP.NET Web Forms", "ASP.NET MVC", "ADO.NET", "Entity Framework 5", "WPF - MVVM", "WCF", "T-SQL", "HTML", "CSS", "JS", "JQuery", "Visual Studio 2012", "SQL Server 2008 &amp; 2012", "Training"]
+        description: `Trained by a supervisor in a long list of .NET Technologies by realizing small projects (enum: C#, VB.NET, ASP.NET WebForms, ASP.NET MVC, ADO.NET, Entity Framework, WPF – MVVM, WFC, Spring.NET, T-SQL, Javascript & jQuery, HTML, CSS...).`,
+        tags: ["Training"]
     }
 ];
 
@@ -346,29 +373,29 @@ var edus = [
         institution: "🌞 Udemy - Agile Project Management: Scrum Step by Step",
         title: '<a href="http://ude.my/UC-30XT1MAU" target="_blank">Certificate</a>',
         period: "Aug. 2019 (1 month)",
-        description: ``,
-        tags: ["Angular"]
+        description: `The followup to "Scrum Certification Prep + Scrum Master + Agile Scrum Training". I learned more details about Scrum Artifacts, member roles, and techniques in order to properly apply Scrum in realworld scenarios.`,
+        tags: ["Agile", "Scrum"]
     },
     {
-        institution: "🌞 Udemy - Angular 8 (formerly Angular 2) - The Complete Guide",
+        institution: "🌞 Udemy - Angular 8 (Angular 2+) - The Complete Guide",
         title: '<a href="http://ude.my/UC-4GREQAHJ" target="_blank">Certificate</a>',
         period: "JuL. 2019 (1 month)",
-        description: ``,
+        description: `I took this course after already working with Angular a few months, for rooting my knowledge on the subject. This complete guide is presented by Maximilian Schwarzmüller.`,
         tags: ["Angular"]
     },
     {
         institution: "🌞 Udemy - Scrum Certification Prep + Scrum Master + Agile Scrum Training",
         title: '<a href="http://ude.my/UC-SOSRGIMB" target="_blank">Certificate</a>',
         period: "Jun. 2019 (1 month)",
-        description: ``,
+        description: `I took this course in order to clarify my notions about Agile methodologies and the Scrum framework. Throughout the course, I learned about the Scrum Theory, Scrum Team Roles, Scrum Events, Scrum Artifacts, Scrum of Scrums, with practical exercises and questions.`,
         tags: ["Agile", "Scrum", "Scrum Master"]
     },
     {
         institution: "🎓 Faculty of Computer Science, „Alexandru Ioan Cuza” University, Iași",
-        title: "Bachelor's Degree, Computer Science",
+        title: "!Bachelor's Degree, Computer Science",
         period: "2014 - 2017 (3 years)",
-        description: `Status: finished, no license.<br/> Three years of learning more or less useful knowledge (presented in a
-                more or less optimized fashion), meeting new people and discovering new ideas about my future self.`,
+        description: `Status: finished, no license.<br/> 
+        Three years of learning more or less useful knowledge (presented in a more or less optimized fashion), meeting new people and discovering new ideas about my future self. Topics studied added as tags.`,
         tags: ["Web Technologies", "Cloud Computing", ".NET", ".NET Advanced", "OOP", "Programming Engineering", "Computer Networks", "Databases &amp; DBMS Practice", "Operating Systems - Linux", "Python", "Game design &amp; Development", "Computer Graphics", "Regular Expressions / Formal Languages", "Mathematics", "Logics for Computer Science", "Machine Learning", "Artificial Intelligence", "Data Structures", "Algorithms Design", "Java"]
     },
     {
@@ -466,20 +493,9 @@ contributors.forEach(element => {
 /* All projects AREA */
 var allProjects = [
     {
-        category: "work-projects",
-        time: "May 2018 - Present",
-        type: "Work / Finished",
-        title: "Codename \"AM\" - .NET Core Banking Assets Manager",
-        description: "Web application, reengineered after an old Desktop app, with ASP.NET Core &amp; Angular, which does banking work, algorithms and management.",
-        url: {
-            link: "javascript:void()",
-            title: "Private work"
-        },
-        image: "./img/portfolio/ramnet.jpg"
-    }, 
-    {
+        id: 19,
         category: "side-projects",
-        time: "Nov. 2018 - Present",
+        time: "Aug. 2018 - Present",
         type: "Side Project / Solo / In Progress",
         title: "Replay.NET - Streaming App Playground",
         description: "A web application which tries to integrate many existing movie engines (IMDb, Trakt, Taste) for creating awesome movie browsing and one-place streaming experience.",
@@ -490,6 +506,20 @@ var allProjects = [
         image: "./img/portfolio/replay.jpg"
     },
     {
+        id: 20,
+        category: "work-projects",
+        time: "May 2018 - Present",
+        type: "Work / Finished",
+        title: "Risk Asset Manager",
+        description: "Web application, reengineered after an old Desktop app, with ASP.NET Core &amp; Angular, which does banking workflows, algorithms and management of assets.",
+        url: {
+            link: "javascript:void()",
+            title: "Private work"
+        },
+        image: "./img/portfolio/ramnet.jpg"
+    },
+    {
+        id: 18,
         category: "side-projects",
         time: "Nov. 2018 - Dec. 2018",
         type: "Side Project / Solo / Finished",
@@ -500,24 +530,14 @@ var allProjects = [
             title: "Private work"
         },
         image: "./img/portfolio/gurushots.jpg"
-    },
+    }, 
     {
-        category: "work-projects",
-        time: "Jan. 2018 - Present",
-        type: "Work Project / Continuous",
-        title: "LeetCode - Solved Problems",
-        description: "Consists mostly of solving, in different ways, problems from LeetCode (a website that approaches different software engineering problems) and training materials.",
-        url: {
-            link: "https://github.com/marianfx/solver-leetcode",
-            title: "Check GitHub"
-        },
-        image: "./img/portfolio/leetcode.png"
-    }, {
+        id: 16,
         category: "side-projects",
-        time: "Nov. 2017 - ?",
+        time: "Nov. 2017 - Nov. 2018",
         type: "Side Project / Solo / Discontinued",
         title: "LIFR - Instagram Manager",
-        description: "Web, Node.JS based application for managing Instagram account - access to followers, unfollowers, history, automated tasks. Private project.",
+        description: "Web, Node.JS based application for managing Instagram account - access to followers, unfollowers, history, automated tasks. Abandoned, but interesting",
         url: {
             link: "javascript:void()",
             title: "Private work"
@@ -525,10 +545,11 @@ var allProjects = [
         image: "./img/portfolio/lifr.png"
     },
     {
+        id: 15,
         category: "work-projects",
-        time: "Aug. 2017 - May 2018",
+        time: "Aug. 2017 - Apr. 2018",
         type: "Work / Finished",
-        title: "Codename \"Promise\" - Oil&Gas Project Management",
+        title: "Promis - Oil&Gas Project Management",
         description: "A smart web application, ASP.NET MVC &amp; (*insert FE libs) of which purpose is the management of huge oil & gas project's construction and resources",
         url: {
             link: "javascript:void()",
@@ -537,34 +558,44 @@ var allProjects = [
         image: "./img/portfolio/promisnet.jpg"
     },
     {
-        category: "uni-projects",
-        time: "May 2017",
-        type: "Uni / + " + cLinks.cezy,
-        title: "Learning Curve - Numerical Calculus",
-        description: "Small projects (in Java & C#) that solve different complicated mathematical problems: matrices, aproximations, automated equation solving etc.",
+        id: 8,
+        category: "work-projects",
+        time: "Nov. 2016 - Aug. 2017",
+        type: "Work / Finished",
+        title: "'Product Factory' - Banking product management",
+        description: "Developed WPF Desktop application, withing an internal MVVM framework, following best practices, adding architectural ideas and testing.",
         url: {
-            link: "https://bitbucket.org/javafxteam/cn-labs",
-            title: "Check repo"
+            link: "javascript:void()",
+            title: "Private work"
         },
-        image: "./img/portfolio/labs-cn.jpg"
+        image: "./img/portfolio/product-placement.jpg"
     },
     {
+        id: 14,
         category: "uni-projects",
-        time: "May 2017",
+        time: "Nov. 2016 - May 2017",
         type: "Uni / + " + cLinks.cezy,
-        title: "Learning Curve - Computer Graphics",
-        description: "Small projects (in C++) that test the 'power' of raw computer graphic engines. Most of them contain lots of mathematics and output beautiful graphics.",
+        title: "Learning Curve - University",
+        description: `This 'project' lists all the interesting projects worked on in years 2 and 3 of university:
+        <a href='https://bitbucket.org/javafxteam/cn-labs'>Numerical Calculus</a>,
+        <a href='https://bitbucket.org/javafxteam/cg-labs'>Computer Graphics</a>,
+        <a href='https://bitbucket.org/marianfx/cc-labs'>Cloud Computing</a>,
+        <a href='https://github.com/marianfx/python-labs'>Python</a>,
+        <a href='https://github.com/marianfx/ai-labs'>Artificial Intelligence</a>,
+        <a href='https://github.com/marianfx/dotnet-core-labs'>.NET Core</a>,
+        `,
         url: {
-            link: "https://bitbucket.org/javafxteam/cg-labs",
-            title: "Check repo"
+            link: "javascript:void()",
+            title: "Link in description"
         },
-        image: "./img/portfolio/labs-cf.jpg"
+        image: "./img/portfolio/labs-cn.jpg"
     }, 
     {
+        id: 12,
         category: "uni-projects",
         time: "Jan 2017",
         type: "Uni / + " + cLinks.ioana + ", " + cLinks.cezy + ", " + cLinks.marta + ", " + cLinks.alberto + ", " + cLinks.bianca + ", " + cLinks.tifui + ", " + cLinks.vali,
-        title: "Solution1 - Learning & Homeworks Manager",
+        title: "Solution1 - .NET Core iteration & improvement of Fun Web",
         description: "Next gen/alternative of Fun Web. Replaces multiplayer concepts with a strong assignments uploads/copyrights check/grades management.",
         url: {
             link: "https://github.com/tabby336/Solution1",
@@ -573,29 +604,7 @@ var allProjects = [
         image: "./img/portfolio/solution1.jpg"
     }, 
     {
-        category: "uni-projects",
-        time: "Jan 2017",
-        type: "Uni / Solo",
-        title: "Learning Curve - Cloud Computing",
-        description: "Small projects using different languages - a web youtube mp3 search & download tool, a REST API implemented without a framework, and a websockets collaborative markdown editor.",
-        url: {
-            link: "https://bitbucket.org/marianfx/cc-labs",
-            title: "Check repo"
-        },
-        image: "./img/portfolio/labs-cloud.jpg"
-    }, 
-    {
-        category: "uni-projects",
-        time: "Jan 2017",
-        type: "Uni / Solo / Labs",
-        title: "Learning Curve - Python",
-        description: "Contains examples of doing many things basic things in Python, including more advanced ones like HTTP content server and Site Image Scraper",
-        url: {
-            link: "https://github.com/marianfx/python-labs",
-            title: "Check Github"
-        },
-        image: "./img/portfolio/labs-python.jpg"
-    }, {
+        id: 9,
         category: "side-projects",
         time: "Jan 2017",
         type: "Side Project / Solo",
@@ -608,58 +617,25 @@ var allProjects = [
         image: "./img/portfolio/id3-ml.png"
     },
     {
+        id: 17,
         category: "work-projects",
-        time: "Nov. 2016 - Aug. 2017",
-        type: "Work / Finished",
-        title: "Codename \"Product Placement\" - Banking application",
-        description: "Developed WPF Desktop application, withing an internal MVVM framework, following best practices, adding architectural ideas and testing.",
+        time: "Jan. 2018 - Present",
+        type: "Work Project / Continuous",
+        title: "'Problem solver' - LeetCode, CodinGame",
+        description: "In my free time, I like to take part in problem-solving/competitive websites where people can solve different problems. This project involves solving certain problems (games) from there (<a href='https://github.com/marianfx/solver-codingame'>CodinGame</a> and <a href='https://github.com/marianfx/solver-leetcode'>Leetcode</a> for now).",
         url: {
             link: "javascript:void()",
-            title: "Private work"
+            title: "Links in description"
         },
-        image: "./img/portfolio/product-placement.jpg"
+        image: "./img/portfolio/leetcode.png"
     },
     {
-        category: "side-projects",
-        time: "Nov. 2016 - Present",
-        type: "Side Project / Solo / In Progress",
-        title: "Codingame - Solved problems",
-        description: "Codingame is a competitive website where people can solve different problems, which are presented in the form of games. This project involves solving certain problems (games) from here. Full list on GitHub.",
-        url: {
-            link: "https://github.com/marianfx/solver-codingame",
-            title: "Check Github"
-        },
-        image: "./img/portfolio/codingame.jpg"
-    },  
-    {
-        category: "uni-projects",
-        time: "Nov. 2016",
-        type: "Uni / Solo / Labs",
-        title: "Learning Curve - Artificial Intelligence",
-        description: "Practical implementations of small AI Concents - a simple chatbot, a 4-ways Hanoi solver, a simple bot that plays chess on the Web, and some DBPedia samples.",
-        url: {
-            link: "https://github.com/marianfx/ai-labs",
-            title: "Check Github"
-        },
-        image: "./img/portfolio/labs-ai.jpg"
-    }, {
-        category: "uni-projects",
-        time: "Nov. 2016",
-        type: "Uni / Solo / Labs",
-        title: "Learning Curve - .NET Core",
-        description: "Contains learning & practice material about .NET Core 1.0 / 1.1 - concepts of OOP, LINQ, databases and repositories, and finally webforms (not .NET Core)",
-        url: {
-            link: "https://github.com/marianfx/dotnet-core-labs",
-            title: "Check Github"
-        },
-        image: "./img/portfolio/labs-netcore.jpg"
-    },
-    {
+        id: 4,
         category: "work-projects",
         time: "Jun. 2016 - Nov. 2016",
         type: "Work / Finished",
-        title: "Codename \"Victory\" - Automated Tests & Tools",
-        description: "Developed a set of tools to facilitate the automated testing of a banking website; also executed and maintained a set of (Telerik) automated tests.",
+        title: "'Vittoria's Secrets' - Automated Tests & Tools",
+        description: "Developed a set of tools to facilitate the automated testing of a banking website (C#); also executed and maintained a set of (Telerik) automated tests.",
         url: {
             link: "javascript:void()",
             title: "Private work"
@@ -667,18 +643,20 @@ var allProjects = [
         image: "./img/portfolio/tests.jpg"
     },
     {
-        category: "uni-projects",
-        time: "Mar. 2016 - Jun. 2016",
-        type: "Uni / + " + cLinks.groza + ", " + cLinks.cezy + ", " + cLinks.dorin,
-        title: "Fun Web - Node.JS based Learning &amp; Multiplayer WebApp",
-        description: "Fun educational app for learning courses, gaining XP and then competing in multiplayer Q&A competitions. Check Github for full details.",
+        id: 1,
+        category: "work-projects",
+        time: "Oct. 2015 - Jun. 2016",
+        type: "Work / Finished",
+        title: "'Anti-fraud' - Fraud Management System",
+        description: "A smart web application, ASP.NET Web Forms and many FE libs. Entered the project when it was in progress and developed different functionalities.",
         url: {
-            link: "https://github.com/marianfx/team-7-fun-web",
-            title: "Check Github"
+            link: "javascript:void()",
+            title: "Private work"
         },
-        image: "./img/portfolio/fun-web.png"
+        image: "./img/portfolio/anti-fraud.jpg"
     },
     {
+        id: 2,
         category: "side-projects",
         time: "Jan. 2016",
         type: "Side Project / Solo",
@@ -691,17 +669,18 @@ var allProjects = [
         image: "./img/portfolio/change-notifier.jpg"
     },
     {
-        category: "work-projects",
-        time: "Oct. 2015 - Jun. 2016",
-        type: "Work / Finished",
-        title: "Codename \"Anti-fraud\" - Fraud Management System",
-        description: "A smart web application, ASP.NET Web Forms and many FE libs. Entered the project when it was in progress and developed different functionalities.",
+        id: 3,
+        category: "uni-projects",
+        time: "Mar. 2016 - Jun. 2016",
+        type: "Uni / + " + cLinks.groza + ", " + cLinks.cezy + ", " + cLinks.dorin,
+        title: "Fun Web - Node.JS based Learning &amp; Multiplayer WebApp",
+        description: "Fun educational app for learning courses, gaining XP and then competing in multiplayer Q&A competitions. Check Github for full details.",
         url: {
-            link: "javascript:void()",
-            title: "Private work"
+            link: "https://github.com/marianfx/team-7-fun-web",
+            title: "Check Github"
         },
-        image: "./img/portfolio/anti-fraud.jpg"
-    },
+        image: "./img/portfolio/fun-web.png"
+    }
 ];
 
 var numbersData = [{

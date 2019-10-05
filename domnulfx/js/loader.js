@@ -125,7 +125,7 @@ function attachProfessionalProfile() {
     var overall = `<p>` + profiFile.description + `</p>
                     <div class="btn-group">
                         <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resume <span class="caret"></span></a>
-                        <ul class="dropdown-menu">`
+                        <ul class="dropdown-menu" style="z-index:9999; font-size: 12px;">`
                             + elements + 
                         `</ul>
                     </div>`;
@@ -366,7 +366,7 @@ function attachContact() {
 
 function initProjects() {
     _.forEach(allProjects, function (data) {
-        var element = `<li class="full-card card ` + data.category + ` col-xs-12 col-sm-6 col-md-4 mix">
+        var element = `<li id="project-` + data.id + `" class="full-card card ` + data.category + ` col-xs-12 col-sm-6 col-md-4 mix">
                             <div class="wrapper" style="background: url(` + data.image + `) center/cover no-repeat;">
                                 <div class="header">
                                 <div class="date">

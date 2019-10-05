@@ -32,6 +32,10 @@ a {
 	color: #333;
 }
 
+.wrapper .data .content .text a {
+	color: lightgray;
+}
+
 a:hover {
 	color: #171915;
 }
