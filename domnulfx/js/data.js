@@ -102,11 +102,11 @@ var profiFile = {
             link: "https://www.linkedin.com/in/marianfx/"
         },
         {
-            title: "Europass (PDF)",
-            link: "/files/CV-ESP-Europass-20190826-Marian-Focsa-EN.pdf"
+            title: "Europass (PDF, full)",
+            link: "/files/CV-Europass-20191005-Marian-Focsa-EN.pdf"
         },
         {
-            title: "Linkedin format (PDF)",
+            title: "Linkedin (PDF, short)",
             link: "/files/cv_pro.pdf"
         }
     ]
