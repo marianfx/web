@@ -497,8 +497,8 @@ var allProjects = [
         category: "side-projects",
         time: "Aug. 2018 - Present",
         type: "Side Project / Solo / In Progress",
-        title: "Replay.NET - Streaming App Playground",
-        description: "A web application which tries to integrate many existing movie engines (IMDb, Trakt, Taste) for creating awesome movie browsing and one-place streaming experience.",
+        title: "Replay.NET - Streaming Playground",
+        description: "Web application which tries to integrate many existing movie engines (IMDb, Trakt, Taste) for creating awesome movie / one-place streaming experience.",
         url: {
             link: "javascript:void()",
             title: "Private work"
@@ -524,7 +524,7 @@ var allProjects = [
         time: "Nov. 2018 - Dec. 2018",
         type: "Side Project / Solo / Finished",
         title: "Autofiller - Gurushots Automation Bot",
-        description: "Created as a side project in order to test if Gurushots' voting sessions and friend search can be automated using Puppeteer and .NET Core. Private project.",
+        description: "Created as a side project in order to test if Gurushots' voting and friend search can be automated using Puppeteer and .NET Core",
         url: {
             link: "javascript:void()",
             title: "Private work"
@@ -550,7 +550,7 @@ var allProjects = [
         time: "Aug. 2017 - Apr. 2018",
         type: "Work / Finished",
         title: "Promis - Oil&Gas Project Management",
-        description: "A smart web application, ASP.NET MVC &amp; (*insert FE libs) of which purpose is the management of huge oil & gas project's construction and resources",
+        description: "Web application, ASP.NET MVC &amp; (*FE libs) of which purpose is the management of huge oil&gas project's construction and resources",
         url: {
             link: "javascript:void()",
             title: "Private work"
@@ -563,7 +563,7 @@ var allProjects = [
         time: "Nov. 2016 - Aug. 2017",
         type: "Work / Finished",
         title: "'Product Factory' - Banking product management",
-        description: "Developed WPF Desktop application, withing an internal MVVM framework, following best practices, adding architectural ideas and testing.",
+        description: "Developed WPF Desktop application, with an internal MVVM framework, following best practices, adding ideas and testing.",
         url: {
             link: "javascript:void()",
             title: "Private work"
@@ -596,7 +596,7 @@ var allProjects = [
         time: "Jan 2017",
         type: "Uni / + " + cLinks.ioana + ", " + cLinks.cezy + ", " + cLinks.marta + ", " + cLinks.alberto + ", " + cLinks.bianca + ", " + cLinks.tifui + ", " + cLinks.vali,
         title: "Solution1 - .NET Core iteration & improvement of Fun Web",
-        description: "Next gen/alternative of Fun Web. Replaces multiplayer concepts with a strong assignments uploads/copyrights check/grades management.",
+        description: "Fun Web alternative. Replaces multiplayer concepts with a strong assignments / copyright /grades management.",
         url: {
             link: "https://github.com/tabby336/Solution1",
             title: "Check Github"
@@ -609,7 +609,7 @@ var allProjects = [
         time: "Jan 2017",
         type: "Side Project / Solo",
         title: "ID3 Helper (Machine Learning) - Web / Android",
-        description: "Based on Cordova engine, this is a helper for the ID3 Machine Learning Algorithm, which can be used on web or mobile. Check Github for full details.",
+        description: "Based on Cordova engine, this is a helper for the ID3 Machine Learning Algorithm, which can be used on web or mobile.",
         url: {
             link: "https://github.com/marianfx/com.fx.Id3Helper",
             title: "Check Github"
@@ -622,7 +622,7 @@ var allProjects = [
         time: "Jan. 2018 - Present",
         type: "Work Project / Continuous",
         title: "'Problem solver' - LeetCode, CodinGame",
-        description: "In my free time, I like to take part in problem-solving/competitive websites where people can solve different problems. This project involves solving certain problems (games) from there (<a href='https://github.com/marianfx/solver-codingame'>CodinGame</a> and <a href='https://github.com/marianfx/solver-leetcode'>Leetcode</a> for now).",
+        description: "In my free time, I enjoy riddles on problem-solving websites. This project contains solutions for <a href='https://github.com/marianfx/solver-codingame'>CodinGame</a> and <a href='https://github.com/marianfx/solver-leetcode'>Leetcode</a>.",
         url: {
             link: "javascript:void()",
             title: "Links in description"
@@ -635,7 +635,7 @@ var allProjects = [
         time: "Jun. 2016 - Nov. 2016",
         type: "Work / Finished",
         title: "'Vittoria's Secrets' - Automated Tests & Tools",
-        description: "Developed a set of tools to facilitate the automated testing of a banking website (C#); also executed and maintained a set of (Telerik) automated tests.",
+        description: "Developed tools for the automated testing of a banking website (C#); also executed and maintained a set of tests.",
         url: {
             link: "javascript:void()",
             title: "Private work"
@@ -648,7 +648,7 @@ var allProjects = [
         time: "Oct. 2015 - Jun. 2016",
         type: "Work / Finished",
         title: "'Anti-fraud' - Fraud Management System",
-        description: "A smart web application, ASP.NET Web Forms and many FE libs. Entered the project when it was in progress and developed different functionalities.",
+        description: "Web application /w ASP.NET Web Forms. Entered the project when it was in progress and developed different functionalities.",
         url: {
             link: "javascript:void()",
             title: "Private work"
@@ -661,7 +661,7 @@ var allProjects = [
         time: "Jan. 2016",
         type: "Side Project / Solo",
         title: "Change Notifier - Desktop Node.JS &amp; Electron Application",
-        description: "Built with Electron, capable of running diffs on a webpage and show you only what's changed, using native notifications. Check Github for full details.",
+        description: "Built with Electron, capable of running diffs on a webpage and show you only what's changed, using native notifications.",
         url: {
             link: "https://github.com/marianfx/change-notifier",
             title: "Check Github"
@@ -674,7 +674,7 @@ var allProjects = [
         time: "Mar. 2016 - Jun. 2016",
         type: "Uni / + " + cLinks.groza + ", " + cLinks.cezy + ", " + cLinks.dorin,
         title: "Fun Web - Node.JS based Learning &amp; Multiplayer WebApp",
-        description: "Fun educational app for learning courses, gaining XP and then competing in multiplayer Q&A competitions. Check Github for full details.",
+        description: "Fun educational app for learning courses, gaining XP and then competing in multiplayer Q&A competitions.",
         url: {
             link: "https://github.com/marianfx/team-7-fun-web",
             title: "Check Github"
