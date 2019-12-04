@@ -31,7 +31,7 @@ var loves = [{
 ];
 
 var socialLinks = [{
-        url: "https://linkkle.com/monsieurfx",
+        url: "https://linktr.ee/monsieurfx",
         icon: "fa-globe",
         title: "Everything"
     },
@@ -95,7 +95,7 @@ var contactData = {
     messengerLink: "https://m.me/marian.fx"
 };
 var profiFile = {
-    description: "Sassy software enthusiast with great skills of communication, attention to details & architectural thinking. Based on my fast learning algorithm and team choreography understanding, I'm looking forward to increasing my software engineering skills and growing myself into the better developer by tackling difficult projects and coming front with innovative solutions. Open-minded, I'll be always looking for a new challenge to take on. ",
+    description: "Sassy software enthusiast with great skills of communication, attention to details & architectural thinking. Based on my fast learning algorithm and team choreography understanding, I'm looking forward to increasing my software engineering skills and growing myself into the better developer by tackling difficult projects and coming front with innovative solutions. Open-minded, I'll be always looking for a new challenge to take on.",
     links: [
         {
             title: "Linkedin (Web)",
@@ -103,11 +103,11 @@ var profiFile = {
         },
         {
             title: "Europass (PDF, full)",
-            link: "/files/CV-Europass-20191005-Marian-Focsa-EN.pdf"
+            link: "/files/CV.Marian.Focsa.EN.pdf"
         },
         {
             title: "Linkedin (PDF, short)",
-            link: "/files/cv_pro.pdf"
+            link: "/files/CV.SHORT.Marian.Focsa.EN.pdf"
         }
     ]
 };
@@ -245,7 +245,7 @@ var cards = [
             {
                 title: "JS / CSS & Frameworks",
                 value: 80,
-                tooltip: "Includes jQuery, Angular (2+), Bootstrap, Material Design, Chart.js and many other smaller packages for any usecase"
+                tooltip: "Includes jQuery, Angular (2+), Vue.JS, Bootstrap, Material Design, Chart.js and many other smaller packages for any usecase"
             },
             {
                 title: "Databases / ORMs / Any",
@@ -370,6 +370,21 @@ var jobs = [{
 
 var edus = [
     {
+        institution: "🌞 Udemy - Vue JS 2 - The Complete Guide (incl. Vue Router & Vuex)",
+        title: '<a href="http://ude.my/UC-7PPSDK51" target="_blank">Certificate</a>',
+        period: "Sep. 2019 (1 month)",
+        description: `I took this complete course about Vue.js in order to prepare for a set of work-related projects and to keep up with the ongoing progress of front-end technologies. Coming from an Angular background, many terms here are familiar; as a result, it was easy to learn and interesting to compare the two tools.
+        <br/>This course is presented by <a href="https://www.udemy.com/user/maximilian-schwarzmuller/" target="_blank">Maximilian Schwarzmüller</a>, the same awesome person from which I learned Angular. All problems tackled in the course can be found on my <a href="https://github.com/marianfx/vue-udemy" target="_blank">GitHub</a>.`,
+        tags: ["DevOps"]
+    },
+    {
+        institution: "🌞 Udemy - DevOps Essentials",
+        title: '<a href="http://ude.my/UC-NY1A7VGY" target="_blank">Certificate</a>',
+        period: "Sep. 2019 (1 month)",
+        description: `I took this course in order to learn the core notion of what DevOps ecosystem means. It is presented by The Linux Academy.`,
+        tags: ["DevOps"]
+    },
+    {
         institution: "🌞 Udemy - Agile Project Management: Scrum Step by Step",
         title: '<a href="http://ude.my/UC-30XT1MAU" target="_blank">Certificate</a>',
         period: "Aug. 2019 (1 month)",
@@ -380,7 +395,8 @@ var edus = [
         institution: "🌞 Udemy - Angular 8 (Angular 2+) - The Complete Guide",
         title: '<a href="http://ude.my/UC-4GREQAHJ" target="_blank">Certificate</a>',
         period: "JuL. 2019 (1 month)",
-        description: `I took this course after already working with Angular a few months, for rooting my knowledge on the subject. This complete guide is presented by Maximilian Schwarzmüller.`,
+        description: `I took this course after already working with Angular a few months, for rooting my knowledge on the subject. This complete guide is presented by Maximilian Schwarzmüller. <br/>
+        All problems tackled in the course can be found on my <a href="https://github.com/marianfx/ng-udemy-files" target="_blank">GitHub</a>.`,
         tags: ["Angular"]
     },
     {
