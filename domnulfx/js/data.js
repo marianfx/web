@@ -31,7 +31,7 @@ var loves = [{
 ];
 
 var socialLinks = [{
-        url: "https://linktr.ee/monsieurfx",
+        url: "https://my.bio/monsieurfx",
         icon: "fa-globe",
         title: "Everything"
     },
@@ -90,7 +90,7 @@ var infos = [{
 var contactData = {
     address: `Iași, România`,
     phone: "+40 741-579-***",
-    mails: ["contact@marianfocsa.info", "marian.focsa@kireygroup.com"],
+    mails: ["contact@marianfocsa.info", "marian.focsa@outlook.com"],
     whentocontact: ["Week: 09:00 AM - 19:00 PM", "Weekend: 11 AM - 2 PM"],
     messengerLink: "https://m.me/marian.fx"
 };
@@ -104,10 +104,6 @@ var profiFile = {
         {
             title: "Europass (PDF, full)",
             link: "/files/CV.Marian.Focsa.EN.pdf"
-        },
-        {
-            title: "Linkedin (PDF, short)",
-            link: "/files/CV.SHORT.Marian.Focsa.EN.pdf"
         }
     ]
 };
@@ -119,12 +115,12 @@ var interestsIntro = {
 
 var interestsData = [{
         title: "Movies",
-        link: "https://www.taste.io/users/monsieurfx",
+        link: "https://www.imdb.com/user/ur30571247",
         icon: "fa-film"
     },
     {
         title: "Music",
-        link: "https://open.spotify.com/user/marianfx69?si=vJS66F5pRmmoYvJ4SlqqdQ",
+        link: "https://www.youtube.com/c/MonsieurFX/playlists",
         icon: "fa-music"
     },
     {
@@ -159,7 +155,7 @@ var interestsData = [{
     },
     {
         title: "Video Games",
-        link: "https://keeptrackofmygames.com/users/marianfx69",
+        link: "https://rawg.io/@marianfx/games",
         icon: "fa-gamepad"
     },
     {
@@ -175,11 +171,13 @@ var cards = [
         data: [
             {
                 title: "Web Development",
-                value: 95
+                value: 95,
+                tooltip: "designing and creating APIs, full-stack with different frameworks, knowledge of core concepts that I can apply other frameworks"
             },
             {
                 title: ".NET Development",
-                value: 93
+                value: 93,
+                tooltip: "desktop, web or services"
             },
             {
                 title: "OOP / <a target='_blank' href='https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)'>S.O.L.I.D.</a> Programming.",
@@ -187,21 +185,29 @@ var cards = [
             },
             {
                 title: "Front-End Development",
-                value: 83
+                value: 83,
+                tooltip: "with or without a framework"
             },
             {
-                title: "Databases / SQL",
-                value: 75
+                title: "Relational Databases",
+                value: 75,
+                tooltip: "Manage, Query, Procedural Programming"
             },
             {
                 title: "Data Structures &amp; Algorithms",
                 value: 70
+            },
+            {
+                title: "Mentorship",
+                value: 70,
+                tooltip: "ability to teach knowledge from these fields to others"
             }
         ]
     },
     {
         title: "Personal Skills",
-        data: [{
+        data: [
+            {
                 title: "Confidence",
                 value: 90
             },
@@ -215,7 +221,7 @@ var cards = [
             },
             {
                 title: "Architectural Thinking",
-                value: 75
+                value: 80
             },
             {
                 title: "Fast Learning algorithm",
@@ -231,26 +237,26 @@ var cards = [
             },
             {
                 title: "Team Coreography",
-                value: 65
+                value: 69
             }
         ]
     },
     {
         title: "Technologies Mastered",
         data: [{
-                title: "ASP.NET (+Core) & Frameworks",
+                title: "ASP.NET (+Core) & Related",
                 value: 92,
                 tooltip: "Includes ASP.NET MVC, ASP.NET Web API, .NET Core alternatives and many Nu-Get libraries for any usecase"
             },
             {
-                title: "JS / CSS & Frameworks",
+                title: "Front-End Frameworks & Libs",
                 value: 80,
-                tooltip: "Includes jQuery, Angular (2+), Vue.JS, Bootstrap, Material Design, Chart.js and many other smaller packages for any usecase"
+                tooltip: "Angular (2+), jQuery, Vue.JS, Bootstrap, Material Design Frameworks (Angular Material, Materialize), PrimeNG, Chart.JS + Chart.JS based packages, etc"
             },
             {
-                title: "Databases / ORMs / Any",
+                title: "Databases / ORMs",
                 value: 82,
-                tooltip: "Includes T-SQL & PL/SQL knowledge, advanced query writing, and most of all Entity Framework proeficiency (and extras like EFPlus, Linq); also other query-builder like libs"
+                tooltip: "Includes T-SQL / PL/SQL knowledge, advanced query writing, query building mechanisms, Entity Framework (Core) proficiency with extras like EFPlus (batch) and LINQ, that can be adapted easily to other ORMs"
             },
             {
                 title: "Agile & Customs",
@@ -277,7 +283,7 @@ var cards = [
             },
             {
                 title: "Regular Expressions",
-                value: 50,
+                value: 55,
                 tooltip: "Includes basic knowledge, mostly used when searching in files and when validating data"
             },
         ]
@@ -290,7 +296,7 @@ var cards = [
             },
             {
                 title: "JavaScript (ES6+ +/- TypeScript)",
-                value: 88
+                value: 90
             },
             {
                 title: "SQL (PL/SQL, T-SQL, MySQL)",
@@ -306,11 +312,11 @@ var cards = [
             },
             {
                 title: "C/C++",
-                value: 50
+                value: 30
             },
             {
                 title: "Java",
-                value: 50
+                value: 30
             },
         ]
     },
@@ -319,24 +325,28 @@ var cards = [
 var firstJobYear = 2015;
 var jobs = [{
         title: "🍹 Lead Software Developer",
-        employer: "Kirey Group",
+        employer: "KireyEst",
         period: "Aug. 2017 - Present (?)",
-        description: `Team leader/lead developer of a continuously growing team, working with a tech-stack floating around
-        .NET (Core) and Angular, collaborating with clients and managers from multiple countries.
+        description: `Team leader/lead developer of a continuously growing team, working with a tech-stack floating around .NET (Core) and Angular, collaborating in an Agile environment with clients and managers.
 
         <br/><br/>
+        <b>Related projects:</b> software development & maintenance, writing technical documentation, API design, technical decisions based on requirements, software architecture, planning & estimates, mentorship (<i>planning & implementation of training sessions on .NET, Angular & related</i>)
+        <br/>
         <b>Related projects:</b> 
-            <a href="#project-15">Promis - Oil&Gas PM</a>,
-            <a href="#project-20">Risk Asset Manager</a>
+            <a href="#project-23">K-Value | KG Talent Platform</a>,
+            <a href="#project-22">GDM</a>,
+            <a href="#project-21">Kaly</a>,
+            <a href="#project-20">Risk Asset Manager</a>,
+            <a href="#project-15">Promis - Oil&Gas PM</a>
         <br/>
         <b>Frameworks:</b> .NET Framework / Core, ASP.NET (Core) MVC / WebApi, Entity Framework (Core), Angular, MSUnit
         <br/>
-        <b>Languages:</b> C#, TypeScript, JavaScript, LINQ, T-SQL flavor, MySQL flavor
+        <b>Languages:</b> C#, TypeScript, JavaScript, LINQ, SQL (flavors: T-SQL, MySQL, PostgreSQL)
         <br/>
-        <b>Environment:</b> Visual Studio, Visual Studio Code, SQL Server Management Studio, DBeaver, GIT (Bitbucket), SVN (Tortoise), Postman, Jira, Citrix Workspace
+        <b>Environment:</b> Visual Studio, Visual Studio Code, docker, Jenkins, SQL Server Management Studio, DBeaver, GIT (Bitbucket), Postman, Jira, Citrix Workspace
         <br/>
-        <b>Other:</b> HTML, CSS, jQuery, Chart.JS, Angular Material, Bootstrap, ASP.NET Core DI, Autofac, Enterprise Library, Automapper, EPPlus (Excel), NPOI (Excel), EFPlus (batch queries), SqlKata (query builder), PDFSharp, SSO`,
-        tags: ["Leadership", "ASP.NET Core", "C#", "Architecture", "Angular"]
+        <b>Other:</b> HTML, CSS, jQuery, Chart.JS, Angular Material, PrimeNG, Bootstrap, ASP.NET Core DI, Autofac, Enterprise Library, Automapper, EPPlus (Excel), NPOI (Excel), EFPlus (batch queries), SqlKata (query builder), PDFSharp, SSO, Office365 / Teams integrations`,
+        tags: ["Leadership", "Web Development", "ASP.NET", "Architecture", "Angular"]
     },
     {
         title: "🍷 .NET Software Developer",
@@ -372,39 +382,34 @@ var edus = [
     {
         institution: "🌞 Udemy - Vue JS 2 - The Complete Guide (incl. Vue Router & Vuex)",
         title: '<a href="http://ude.my/UC-7PPSDK51" target="_blank">Certificate</a>',
-        period: "Sep. 2019 (1 month)",
+        period: "Sep. 2019 - Dec. 2019",
         description: `I took this complete course about Vue.js in order to prepare for a set of work-related projects and to keep up with the ongoing progress of front-end technologies. Coming from an Angular background, many terms here are familiar; as a result, it was easy to learn and interesting to compare the two tools.
         <br/>This course is presented by <a href="https://www.udemy.com/user/maximilian-schwarzmuller/" target="_blank">Maximilian Schwarzmüller</a>, the same awesome person from which I learned Angular. All problems tackled in the course can be found on my <a href="https://github.com/marianfx/vue-udemy" target="_blank">GitHub</a>.`,
-        tags: ["DevOps"]
+        tags: ["VueJS"]
     },
     {
         institution: "🌞 Udemy - DevOps Essentials",
         title: '<a href="http://ude.my/UC-NY1A7VGY" target="_blank">Certificate</a>',
         period: "Sep. 2019 (1 month)",
-        description: `I took this course in order to learn the core notion of what DevOps ecosystem means. It is presented by The Linux Academy.`,
+        description: `I took this course in order to learn the core notion of what DevOps ecosystem means. It is presented by The Linux Academy. After learning it, I prepared some CI/CD environments using docker and Jenkins`,
         tags: ["DevOps"]
     },
     {
-        institution: "🌞 Udemy - Agile Project Management: Scrum Step by Step",
+        institution: "🌞 Udemy - Agile Project Management: Scrum Cert. Prep",
         title: '<a href="http://ude.my/UC-30XT1MAU" target="_blank">Certificate</a>',
         period: "Aug. 2019 (1 month)",
-        description: `The followup to "Scrum Certification Prep + Scrum Master + Agile Scrum Training". I learned more details about Scrum Artifacts, member roles, and techniques in order to properly apply Scrum in realworld scenarios.`,
+        description: `It includes 2 courses: Scrum Certification Prep + Scrum Master + Agile Scrum Training && Agile Project Management: Scrum Step by Step. <br/>
+        I took this set of courses in order to clarify my notions about Agile methodologies and the Scrum framework. Throughout the courses, I learned about Scrum Theory, Scrum Team Roles, Scrum Events, Scrum Artifacts, Scrum of Scrums, with practical exercises and questions about real-world scenarios.`,
         tags: ["Agile", "Scrum"]
     },
     {
-        institution: "🌞 Udemy - Angular 8 (Angular 2+) - The Complete Guide",
+        institution: "🌞 Udemy - Angular (Angular 2+) - The Complete Guide",
         title: '<a href="http://ude.my/UC-4GREQAHJ" target="_blank">Certificate</a>',
-        period: "JuL. 2019 (1 month)",
+        period: "Apr. 2019 - JuL. 2019",
         description: `I took this course after already working with Angular a few months, for rooting my knowledge on the subject. This complete guide is presented by Maximilian Schwarzmüller. <br/>
-        All problems tackled in the course can be found on my <a href="https://github.com/marianfx/ng-udemy-files" target="_blank">GitHub</a>.`,
+        All problems tackled in the course can be found on my <a href="https://github.com/marianfx/ng-udemy-files" target="_blank">GitHub</a>. <br/>
+        Based on this course, I then prepared a restructured & optimized set of classes that I presented, with additional explanations, to a set of juniors`,
         tags: ["Angular"]
-    },
-    {
-        institution: "🌞 Udemy - Scrum Certification Prep + Scrum Master + Agile Scrum Training",
-        title: '<a href="http://ude.my/UC-SOSRGIMB" target="_blank">Certificate</a>',
-        period: "Jun. 2019 (1 month)",
-        description: `I took this course in order to clarify my notions about Agile methodologies and the Scrum framework. Throughout the course, I learned about the Scrum Theory, Scrum Team Roles, Scrum Events, Scrum Artifacts, Scrum of Scrums, with practical exercises and questions.`,
-        tags: ["Agile", "Scrum", "Scrum Master"]
     },
     {
         institution: "🎓 Faculty of Computer Science, „Alexandru Ioan Cuza” University, Iași",
@@ -415,38 +420,10 @@ var edus = [
         tags: ["Web Technologies", "Cloud Computing", ".NET", ".NET Advanced", "OOP", "Programming Engineering", "Computer Networks", "Databases &amp; DBMS Practice", "Operating Systems - Linux", "Python", "Game design &amp; Development", "Computer Graphics", "Regular Expressions / Formal Languages", "Mathematics", "Logics for Computer Science", "Machine Learning", "Artificial Intelligence", "Data Structures", "Algorithms Design", "Java"]
     },
     {
-        institution: "🌞 SoloLearn - JavaScript Course",
-        title: '<a href="https://www.sololearn.com/Profile/1229632/" target="_blank">Certificate of Completion</a>',
-        period: "Jun. 2017 (1 month)",
-        description: ``,
-        tags: ["JavaScript"]
-    },
-    {
-        institution: "🌞 SoloLearn - HTML Fundamentals",
-        title: '<a href="https://www.sololearn.com/Profile/1229632/" target="_blank">Certificate of Completion</a>',
-        period: "Feb. 2017 (1 month)",
-        description: ``,
-        tags: ["HTML", "HTML5"]
-    },
-    {
-        institution: "🌞 SoloLearn - Python 3 Course",
-        title: '<a href="https://www.sololearn.com/Profile/1229632/" target="_blank">Certificate of Completion</a>',
-        period: "Jan. 2017 (1 month)",
-        description: ``,
-        tags: ["Python", "Python 3"]
-    },
-    {
-        institution: "🌞 SoloLearn - C# Course",
-        title: '<a href="https://www.sololearn.com/Profile/1229632/" target="_blank">Certificate of Completion</a>',
-        period: "Jul. 2017 (1 month)",
-        description: ``,
-        tags: ["C#"]
-    },
-    {
         institution: "🎒 „Ștefan Procopiu” High-School, Vaslui",
         title: "High School Diploma in Mathematics and Computer Science",
         period: "2010 - 2014 (4 years)",
-        description: `Also obtained <b>Professional Certificate</b>, <b>Baccalaureate Diploma</b> and <b>English Certificate</b>. 
+        description: `Also obtained <i>Professional Certificate</i>, <i>Baccalaureate Diploma</i> and <i>English Certificate</i>. 
             <hr>
             Baccalaureate - Jun 2014. Avg: <b>9.86</b> <br/> 
             ⭐ Mathematics: <b>10</b> <br/>
@@ -509,12 +486,51 @@ contributors.forEach(element => {
 /* All projects AREA */
 var allProjects = [
     {
+        id: 23,
+        category: "work-projects",
+        time: "Oct. 2019 - Present",
+        type: "Work / In Progress",
+        title: "K-Value | KG Talent Platform",
+        description: "K-Value aggregates employee & implements a feedback system for employees, based on various business indicators, in order to provide a strong overview of a company's workforce. It is written with Spring and Angular, using Office365 and Teams web integrations.",
+        url: {
+            link: "javascript:void()",
+            title: "Private work"
+        },
+        image: "./img/portfolio/k-value.png"
+    },
+    {
+        id: 22,
+        category: "work-projects",
+        time: "Sep. 2019 - Present",
+        type: "Work / In Progress",
+        title: "GDM",
+        description: "Part of the maintenance and evolutionary requests management team for GDM - an application constructed out of a set of services, with a web application on top of them, that handles document management (at multiple layers).",
+        url: {
+            link: "javascript:void()",
+            title: "Private work"
+        },
+        image: "./img/portfolio/gdm.png"
+    },
+    {
+        id: 21,
+        category: "work-projects",
+        time: "Oct. 2019 - Present",
+        type: "Work / In Progress",
+        title: "Kaly",
+        description: "Web application, written in Spring and Angular, for the management of a corporation's internal resources and workflows (e.g. employee management, timesheets, holidays, etc.). I helped reengineer it (from performance and code-quality standpoint) and further build of advanced modules.",
+        url: {
+            link: "javascript:void()",
+            title: "Private work"
+        },
+        image: "./img/portfolio/kaly.jpg"
+    },
+    {
         id: 19,
         category: "side-projects",
         time: "Aug. 2018 - Present",
         type: "Side Project / Solo / In Progress",
         title: "Replay.NET - Streaming Playground",
-        description: "Web application which tries to integrate many existing movie engines (IMDb, Trakt, Taste) for creating awesome movie / one-place streaming experience.",
+        description: "Web application which tries to integrate many existing movie engines (IMDb, Trakt, Taste) for creating awesome movie / one-place streaming experience.  Includes: ASP.NET Core, scraping/testing with Puppeteer, streaming from HTTP and P2P, integration with Electron.",
         url: {
             link: "javascript:void()",
             title: "Private work"
@@ -524,7 +540,7 @@ var allProjects = [
     {
         id: 20,
         category: "work-projects",
-        time: "May 2018 - Present",
+        time: "May 2018 - Aug. 2019",
         type: "Work / Finished",
         title: "Risk Asset Manager",
         description: "Web application, reengineered after an old Desktop app, with ASP.NET Core &amp; Angular, which does banking workflows, algorithms and management of assets.",
@@ -537,7 +553,7 @@ var allProjects = [
     {
         id: 18,
         category: "side-projects",
-        time: "Nov. 2018 - Dec. 2018",
+        time: "Sep.. 2018 - Nov. 2018",
         type: "Side Project / Solo / Finished",
         title: "Autofiller - Gurushots Automation Bot",
         description: "Created as a side project in order to test if Gurushots' voting and friend search can be automated using Puppeteer and .NET Core",
@@ -546,19 +562,6 @@ var allProjects = [
             title: "Private work"
         },
         image: "./img/portfolio/gurushots.jpg"
-    }, 
-    {
-        id: 16,
-        category: "side-projects",
-        time: "Nov. 2017 - Nov. 2018",
-        type: "Side Project / Solo / Discontinued",
-        title: "LIFR - Instagram Manager",
-        description: "Web, Node.JS based application for managing Instagram account - access to followers, unfollowers, history, automated tasks. Abandoned, but interesting",
-        url: {
-            link: "javascript:void()",
-            title: "Private work"
-        },
-        image: "./img/portfolio/lifr.png"
     },
     {
         id: 15,
@@ -602,48 +605,9 @@ var allProjects = [
         `,
         url: {
             link: "javascript:void()",
-            title: "Link in description"
-        },
-        image: "./img/portfolio/labs-cn.jpg"
-    }, 
-    {
-        id: 12,
-        category: "uni-projects",
-        time: "Jan 2017",
-        type: "Uni / + " + cLinks.ioana + ", " + cLinks.cezy + ", " + cLinks.marta + ", " + cLinks.alberto + ", " + cLinks.bianca + ", " + cLinks.tifui + ", " + cLinks.vali,
-        title: "Solution1 - .NET Core iteration & improvement of Fun Web",
-        description: "Fun Web alternative. Replaces multiplayer concepts with a strong assignments / copyright /grades management.",
-        url: {
-            link: "https://github.com/tabby336/Solution1",
-            title: "Check Github"
-        },
-        image: "./img/portfolio/solution1.jpg"
-    }, 
-    {
-        id: 9,
-        category: "side-projects",
-        time: "Jan 2017",
-        type: "Side Project / Solo",
-        title: "ID3 Helper (Machine Learning) - Web / Android",
-        description: "Based on Cordova engine, this is a helper for the ID3 Machine Learning Algorithm, which can be used on web or mobile.",
-        url: {
-            link: "https://github.com/marianfx/com.fx.Id3Helper",
-            title: "Check Github"
-        },
-        image: "./img/portfolio/id3-ml.png"
-    },
-    {
-        id: 17,
-        category: "work-projects",
-        time: "Jan. 2018 - Present",
-        type: "Work Project / Continuous",
-        title: "'Problem solver' - LeetCode, CodinGame",
-        description: "In my free time, I enjoy riddles on problem-solving websites. This project contains solutions for <a href='https://github.com/marianfx/solver-codingame'>CodinGame</a> and <a href='https://github.com/marianfx/solver-leetcode'>Leetcode</a>.",
-        url: {
-            link: "javascript:void()",
             title: "Links in description"
         },
-        image: "./img/portfolio/leetcode.png"
+        image: "./img/portfolio/labs-cn.jpg"
     },
     {
         id: 4,
@@ -651,7 +615,7 @@ var allProjects = [
         time: "Jun. 2016 - Nov. 2016",
         type: "Work / Finished",
         title: "'Vittoria's Secrets' - Automated Tests & Tools",
-        description: "Developed tools for the automated testing of a banking website (C#); also executed and maintained a set of tests.",
+        description: "Developed tools for the automated testing of a banking website (C#); also executed and maintained a set of tests (Telerik).",
         url: {
             link: "javascript:void()",
             title: "Private work"
@@ -674,26 +638,34 @@ var allProjects = [
     {
         id: 2,
         category: "side-projects",
-        time: "Jan. 2016",
+        time: "Jan. 2016 - Present",
         type: "Side Project / Solo",
-        title: "Change Notifier - Desktop Node.JS &amp; Electron Application",
-        description: "Built with Electron, capable of running diffs on a webpage and show you only what's changed, using native notifications.",
+        title: "Technology Testing",
+        description: `Small applications built for wanting to try out different technologies:
+        <a href='https://github.com/marianfx/change-notifier'>Change Notifier</a>,
+        <a href='https://github.com/marianfx/solver-codingame'>CodinGame Problem Solver</a>,
+        <a href='https://github.com/marianfx/solver-leetcode'>Leetcode Problem Solver</a>,
+        <a href='https://github.com/marianfx/com.fx.Id3Helper'>ID3 ML Helper</a>,
+        `,
         url: {
-            link: "https://github.com/marianfx/change-notifier",
-            title: "Check Github"
+            link: "javascript:void()",
+            title: "Links in description"
         },
-        image: "./img/portfolio/change-notifier.jpg"
+        image: "./img/portfolio/tech-test.jpg"
     },
     {
         id: 3,
         category: "uni-projects",
-        time: "Mar. 2016 - Jun. 2016",
-        type: "Uni / + " + cLinks.groza + ", " + cLinks.cezy + ", " + cLinks.dorin,
-        title: "Fun Web - Node.JS based Learning &amp; Multiplayer WebApp",
-        description: "Fun educational app for learning courses, gaining XP and then competing in multiplayer Q&A competitions.",
+        time: "Mar. 2016 - Feb. 2017",
+        type: "Uni / Team Player",
+        title: "Fun Web / Solution1 - Learning / Multiplayer / Assignments",
+        description: `Fun educational app for learning courses, gaining XP, and then competing in multiplayer Q&A competitions. Transformed afterward in assignment upload/grade management. Check:
+        <a href='https://github.com/marianfx/team-7-fun-web'>here</a>,
+        <a href='https://github.com/tabby336/Solution1'>here</a>,
+        `,
         url: {
-            link: "https://github.com/marianfx/team-7-fun-web",
-            title: "Check Github"
+            link: "javascript:void()",
+            title: "Links in description"
         },
         image: "./img/portfolio/fun-web.png"
     }

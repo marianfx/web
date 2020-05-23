@@ -218,6 +218,14 @@ section {
 	margin: 0 0 35px;
 }
 
+.portfolio_items:hover {
+	cursor: pointer;
+}
+
+.portfolio_items .card:hover .title {
+	margin: 0 0 5px;
+}
+
 .title h1 {
 	position: relative;
 	padding-bottom: 10px;
